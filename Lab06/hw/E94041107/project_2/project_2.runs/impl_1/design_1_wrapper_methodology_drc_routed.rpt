@@ -1,0 +1,432 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Dec  8 19:34:53 2018
+| Host         : LAPTOP-FB69CRM4 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 79
++-----------+----------+-------------------------------------------------+------------+
+| Rule      | Severity | Description                                     | Violations |
++-----------+----------+-------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                    | 4          |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 16         |
+| TIMING-17 | Warning  | Non-clocked sequential cell                     | 59         |
++-----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X46Y35 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X46Y33 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X46Y38 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X47Y38 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X46Y41 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X48Y41 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X47Y41 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[12] in site SLICE_X49Y33 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[20] in site SLICE_X49Y32 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[19] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[4] in site SLICE_X49Y34 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[10] in site SLICE_X44Y42 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[2] in site SLICE_X44Y43 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in_reg[0] in site SLICE_X51Y39 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#14 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X51Y40 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#15 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X52Y40 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#16 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X53Y41 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/B_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/B_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/B_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/B_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/B_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/B_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/B_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/B_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/B_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/B_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[0][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[0][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[0][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[0][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[1][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[1][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[1][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[1][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[2][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[2][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[2][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[2][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[3][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[3][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[3][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[3][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[4][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[4][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[4][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[4][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[5][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[5][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[5][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[5][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[6][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[6][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[6][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[6][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[7][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[7][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[7][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[7][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[8][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[8][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[8][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/C_reg[8][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/counter0_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/counter0_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/counter0_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/counter0_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/counter1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/counter1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/counter1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/sel_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/sel_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/sel_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/m1/sel_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+
