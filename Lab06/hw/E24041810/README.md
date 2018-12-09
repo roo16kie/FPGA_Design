@@ -11,7 +11,7 @@ E24041810 E24046755 E24046307
 ### 設計一個矩陣運算的處理器，可做乘法，加法，減法，轉置，行列式運算。
 ### 設計說明
 1. 指令格式:32bits分配如下    
-    31到29:OPcode//0 for add; 1 for sub; 2 for mul; 3 for trans ; 4 for det
+    31到29:OPcode//0 for add; 1 for sub; 2 for mul; 3 for trans ; 4 for det  
 	28到20:rs1//第一個矩陣的第一個資料位址  
 	19到11:rs2//第二個矩陣的第一個資料位址  
 	10到2 :rt//運算完結果存入的位址  
