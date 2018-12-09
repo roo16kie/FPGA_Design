@@ -1,0 +1,635 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Dec  9 17:58:02 2018
+# Process ID: 191392
+# Current directory: C:/Users/Leo/Desktop/FPGA/HW6/HW6.runs/impl_1
+# Command line: vivado.exe -log hw6_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hw6_wrapper.tcl -notrace
+# Log file: C:/Users/Leo/Desktop/FPGA/HW6/HW6.runs/impl_1/hw6_wrapper.vdi
+# Journal file: C:/Users/Leo/Desktop/FPGA/HW6/HW6.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source hw6_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Leo/Desktop/FPGA/ip_repo/matrix_cal_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+Command: link_design -top hw6_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_matrix_cal_0_0/hw6_matrix_cal_0_0.dcp' for cell 'hw6_i/matrix_cal_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_processing_system7_0_0/hw6_processing_system7_0_0.dcp' for cell 'hw6_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_rst_ps7_0_100M_0/hw6_rst_ps7_0_100M_0.dcp' for cell 'hw6_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_auto_pc_0/hw6_auto_pc_0.dcp' for cell 'hw6_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 263 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_matrix_cal_0_0/src/ctrl_ooc.xdc] for cell 'hw6_i/matrix_cal_0/inst'
+Finished Parsing XDC File [c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_matrix_cal_0_0/src/ctrl_ooc.xdc] for cell 'hw6_i/matrix_cal_0/inst'
+Parsing XDC File [c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_processing_system7_0_0/hw6_processing_system7_0_0.xdc] for cell 'hw6_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_processing_system7_0_0/hw6_processing_system7_0_0.xdc] for cell 'hw6_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_rst_ps7_0_100M_0/hw6_rst_ps7_0_100M_0_board.xdc] for cell 'hw6_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_rst_ps7_0_100M_0/hw6_rst_ps7_0_100M_0_board.xdc] for cell 'hw6_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_rst_ps7_0_100M_0/hw6_rst_ps7_0_100M_0.xdc] for cell 'hw6_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Leo/Desktop/FPGA/HW6/HW6.srcs/sources_1/bd/hw6/ip/hw6_rst_ps7_0_100M_0/hw6_rst_ps7_0_100M_0.xdc] for cell 'hw6_i/rst_ps7_0_100M/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+14 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 665.703 ; gain = 376.266
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 673.609 ; gain = 7.906
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 14fed6c6a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1227.395 ; gain = 553.637
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1f51ba0cc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.443 . Memory (MB): peak = 1227.395 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 2650b1314
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1227.395 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 136 cells and removed 1680 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 25f307eab
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1227.395 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 943 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 25f307eab
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1227.395 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: f2cb99ad
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1227.395 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: f2cb99ad
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1227.395 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1227.395 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: f2cb99ad
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1227.395 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.830 | TNS=-2960.620 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
+Ending PowerOpt Patch Enables Task | Checksum: f2cb99ad
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1345.492 ; gain = 0.000
+Ending Power Optimization Task | Checksum: f2cb99ad
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1345.492 ; gain = 118.098
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: f2cb99ad
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1345.492 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1345.492 ; gain = 679.789
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.207 . Memory (MB): peak = 1345.492 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Leo/Desktop/FPGA/HW6/HW6.runs/impl_1/hw6_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file hw6_wrapper_drc_opted.rpt -pb hw6_wrapper_drc_opted.pb -rpx hw6_wrapper_drc_opted.rpx
+Command: report_drc -file hw6_wrapper_drc_opted.rpt -pb hw6_wrapper_drc_opted.pb -rpx hw6_wrapper_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Leo/Desktop/FPGA/HW6/HW6.runs/impl_1/hw6_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1345.492 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: eec4ebbd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1345.492 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 907e656d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: d320de21
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: d320de21
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1345.492 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: d320de21
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: f7f2bf9a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 103323d88
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1345.492 ; gain = 0.000
+Phase 2 Global Placement | Checksum: f730e383
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: f730e383
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1877869eb
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1cb2dc81d
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1cb2dc81d
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1cb2dc81d
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 155e99b4e
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 2227991e6
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 235ad9361
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 235ad9361
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 142f50c77
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1345.492 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 142f50c77
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1afccbd55
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1afccbd55
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1345.492 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.972. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 740bf208
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:01 . Memory (MB): peak = 1345.492 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 740bf208
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:01 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 740bf208
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:01 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 740bf208
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:01 . Memory (MB): peak = 1345.492 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 14c3bf684
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:01 . Memory (MB): peak = 1345.492 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 14c3bf684
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:01 . Memory (MB): peak = 1345.492 ; gain = 0.000
+Ending Placer Task | Checksum: 14127dd03
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:01 . Memory (MB): peak = 1345.492 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+57 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:03 . Memory (MB): peak = 1345.492 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.500 . Memory (MB): peak = 1345.492 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Leo/Desktop/FPGA/HW6/HW6.runs/impl_1/hw6_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file hw6_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1345.492 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file hw6_wrapper_utilization_placed.rpt -pb hw6_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.196 . Memory (MB): peak = 1345.492 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file hw6_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1345.492 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 5d0476c7 ConstDB: 0 ShapeSum: e423663c RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1947608f5
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:39 . Memory (MB): peak = 1349.039 ; gain = 3.547
+Post Restoration Checksum: NetGraph: cdea7b4e NumContArr: c68b8da7 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1947608f5
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:39 . Memory (MB): peak = 1349.039 ; gain = 3.547
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1947608f5
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:39 . Memory (MB): peak = 1355.191 ; gain = 9.699
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1947608f5
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:39 . Memory (MB): peak = 1355.191 ; gain = 9.699
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 14cfd1c95
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:41 . Memory (MB): peak = 1376.996 ; gain = 31.504
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.999 | TNS=-3615.514| WHS=-0.662 | THS=-46.681|
+
+Phase 2 Router Initialization | Checksum: 1a3a46f24
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:41 . Memory (MB): peak = 1376.996 ; gain = 31.504
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1372486da
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:41 . Memory (MB): peak = 1376.996 ; gain = 31.504
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 248
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.091 | TNS=-3963.968| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1629ddbe5
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:43 . Memory (MB): peak = 1376.996 ; gain = 31.504
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.408 | TNS=-3973.485| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 19796422e
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+Phase 4 Rip-up And Reroute | Checksum: 19796422e
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 205065c00
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.976 | TNS=-3772.868| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 121283e98
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 121283e98
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+Phase 5 Delay and Skew Optimization | Checksum: 121283e98
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1297b90ef
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.968 | TNS=-3765.863| WHS=-0.173 | THS=-0.299 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 15ee9c4f6
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+Phase 6 Post Hold Fix | Checksum: 15cfdacbd
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.587605 %
+  Global Horizontal Routing Utilization  = 0.452671 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 75.6757%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 71.1712%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 67.6471%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 48.5294%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 183212c9a
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 183212c9a
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: be04c034
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 15a47a43f
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.968 | TNS=-3771.142| WHS=0.061  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 15a47a43f
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 1376.996 ; gain = 31.504
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+75 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:47 . Memory (MB): peak = 1376.996 ; gain = 31.504
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.650 . Memory (MB): peak = 1376.996 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Leo/Desktop/FPGA/HW6/HW6.runs/impl_1/hw6_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file hw6_wrapper_drc_routed.rpt -pb hw6_wrapper_drc_routed.pb -rpx hw6_wrapper_drc_routed.rpx
+Command: report_drc -file hw6_wrapper_drc_routed.rpt -pb hw6_wrapper_drc_routed.pb -rpx hw6_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Leo/Desktop/FPGA/HW6/HW6.runs/impl_1/hw6_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1376.996 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file hw6_wrapper_methodology_drc_routed.rpt -pb hw6_wrapper_methodology_drc_routed.pb -rpx hw6_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file hw6_wrapper_methodology_drc_routed.rpt -pb hw6_wrapper_methodology_drc_routed.pb -rpx hw6_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Leo/Desktop/FPGA/HW6/HW6.runs/impl_1/hw6_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file hw6_wrapper_power_routed.rpt -pb hw6_wrapper_power_summary_routed.pb -rpx hw6_wrapper_power_routed.rpx
+Command: report_power -file hw6_wrapper_power_routed.rpt -pb hw6_wrapper_power_summary_routed.pb -rpx hw6_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+87 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file hw6_wrapper_route_status.rpt -pb hw6_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file hw6_wrapper_timing_summary_routed.rpt -pb hw6_wrapper_timing_summary_routed.pb -rpx hw6_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file hw6_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file hw6_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file hw6_wrapper_bus_skew_routed.rpt -pb hw6_wrapper_bus_skew_routed.pb -rpx hw6_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force hw6_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./hw6_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] 'C:/Users/Leo/Desktop/FPGA/HW6/HW6.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun Dec  9 18:01:32 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+106 Infos, 43 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1823.148 ; gain = 418.633
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  9 18:01:32 2018...
