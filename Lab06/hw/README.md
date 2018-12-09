@@ -1,41 +1,35 @@
-Homework
+FPGA_Design Lab06 HW
 ====
 
-## 繳交時間
-2018/12/9 23:59
+# 成員名單
+E24041810 E24046755 E24046307 
 
-請務必上傳產生的 bitstream (也就是 `.bit`)，你們寫的 driver，及測試用的 Code，以方便我們評分。
+# block diagram
+![block](images/block.jpg)
 
-自己做的 IP 一樣要有 OOC。
+# Program 1.
+### 設計一個矩陣運算的處理器，可做乘法，加法，減法，轉置，行列式運算。
+### 設計說明
+1. 指令格式:32bits  
+    31-29:OPcode//0 for add; 1 for sub; 2 for mul; 3 for trans ; 4 for det
+	28-20:rs1//第一個矩陣的第一個資料位址  
+	19-11:rs2//第二個矩陣的第一個資料位址  
+	10-2 :rt//運算完結果存入的位址  
+	1-0  :沒有用到  
+	
+2. processor.v說明:  
+    當en_inst為1時，輸入的data將被視為instruction並進行解碼，將解碼後的結果傳給controller，  
+	當en_data為1時，輸入的data將被視為data並依據OPcode進行運算，    
+	當en_wb為1時，會將資料傳出去  
+	
+3. controller.v說明:  
+    為一FSM架構，分成五個state，分別是IF、ID、MEM、EXE、WB，IF為抓取指令，ID為解碼，MEM為從BRAM搬取資料，EXE進行運算，
+	WB為將資料寫回BRAM。  
+	
+4. main.c說明:
+    我們在這裡頭有測試過，從SDK存入BRAM的data是正確的，但在硬體(processor)無法抓到正確的資料，詳細情形如第5點所述。  
 
-請勿只交 hdl code。
+5. 遇到的問題:
+    因為我們不太清楚BRAM裡面的base addr是如何設置的，因此無法正確抓取指令，故而造成結果錯誤，且因為時間不太充裕，
+	又面臨期中考週，所以就算我們花了好多心力卻依舊無法完成本次作業的要求。  
 
-### PS 內長什麼樣子?
-
-![block_diagram](../images/ZYNQ.png)
-
-### Program 1.
-
-設計一個矩陣運算的處理器，可做乘法，加法，減法，轉置，行列式運算，系統架構如下。
-
-![block_diagram](../images/system.png)
-
-1. 矩陣運算處理器的指令及資料僅能透過 BRAM 存取。
-
-2. 自行分配 BRAM 中存放指令及資料的位址，並要在 README 告知分配的位址。
-
-3. 矩陣運算處理器運算完後，啟動中斷訊號告知 ARM 存取 BRAM 中的運算結果。 (非必要)
-
-#### BRAM
-[BRAM IP](https://blog.csdn.net/u014485485/article/details/78882027)。
-
-[Block Memory
-Generator](https://www.xilinx.com/support/documentation/ip_documentation/blk_mem_gen/v8_3/pg058-blk-mem-gen.pdf)
-
-#### DMA
-
-[AXI DMA](https://www.xilinx.com/support/documentation/ip_documentation/axi_dma/v7_1/pg021_axi_dma.pdf)
-
-[Designing with the AXI DMA core](https://www.xilinx.com/support/answers/57550.html)
-
-[Using AXI DMA in Vivado](https://www.youtube.com/watch?v=Yklu68WopBo)
