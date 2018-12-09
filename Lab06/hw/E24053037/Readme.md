@@ -13,7 +13,7 @@ E24053037
 如下圖所示
 	//圖片一
 	
-	![圖片1](image/block_design.jpg)
+![圖片1](image/block_design.jpg)
 	
 接著我們的controller是一個狀態機
 以下是狀態圖
