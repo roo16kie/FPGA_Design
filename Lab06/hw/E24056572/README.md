@@ -19,6 +19,11 @@ FPGA-based System Design - Lab06 HW
 
 <h4>Block Design</h4>
 
+本次作業因為我們不太知道要繳交那些檔案，因此整個專案連同IP一同繳交。   
+在testing_src資料中的是給助教測試用的code  
+
+
+
 <img src = "./image/design_1.png">
 
 我們有更改部分的架構，使用了三個True Two Port的BRAM，PS與BRAM的溝通由AXI BRAM Controller負責，PL與Controller則不需要額外的Interface，因為BRAM本身就是在PL裡面了，統一由Controller發送讀寫訊號。
