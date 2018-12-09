@@ -80,7 +80,7 @@ Original</br>
 &nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;{16}</br>
 </br>
 
-determinant=16x2x(-4)x2÷4÷2=2
+determinant=16x(2x(-4)x2 ÷2÷(-4)÷2)÷4÷2=2
 
 
 <h3>Result</h3>
