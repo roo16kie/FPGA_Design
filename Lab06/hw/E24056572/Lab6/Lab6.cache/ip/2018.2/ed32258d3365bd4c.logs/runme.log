@@ -1,0 +1,441 @@
+
+*** Running vivado
+    with args -log design_1_matrix_processor_ctrl_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_matrix_processor_ctrl_0_1.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_matrix_processor_ctrl_0_1.tcl -notrace
+Command: synth_design -top design_1_matrix_processor_ctrl_0_1 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10500 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 447.297 ; gain = 93.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_matrix_processor_ctrl_0_1' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ip/design_1_matrix_processor_ctrl_0_1/synth/design_1_matrix_processor_ctrl_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'matrix_processor_ctrl' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/e6ee/matrix_processor_ctrl.v:1]
+	Parameter ope_Wai bound to: 0 - type: integer 
+	Parameter ope_Mul bound to: 1 - type: integer 
+	Parameter ope_Add bound to: 2 - type: integer 
+	Parameter ope_Min bound to: 3 - type: integer 
+	Parameter ope_Tra bound to: 4 - type: integer 
+	Parameter ope_Det bound to: 5 - type: integer 
+	Parameter s_wai bound to: 0 - type: integer 
+	Parameter s_rea bound to: 1 - type: integer 
+	Parameter s_wri bound to: 2 - type: integer 
+	Parameter s_ope bound to: 3 - type: integer 
+	Parameter s_fin bound to: 4 - type: integer 
+	Parameter cmd_read bound to: 1 - type: integer 
+	Parameter cmd_write bound to: 2 - type: integer 
+WARNING: [Synth 8-3848] Net mem_data_in_A in module/entity matrix_processor_ctrl does not have driver. [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/e6ee/matrix_processor_ctrl.v:6]
+WARNING: [Synth 8-3848] Net mem_data_in_B in module/entity matrix_processor_ctrl does not have driver. [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/e6ee/matrix_processor_ctrl.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'matrix_processor_ctrl' (1#1) [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/e6ee/matrix_processor_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_matrix_processor_ctrl_0_1' (2#1) [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ip/design_1_matrix_processor_ctrl_0_1/synth/design_1_matrix_processor_ctrl_0_1.v:58]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[31]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[30]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[29]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[28]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[27]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[26]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[25]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[24]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[23]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[22]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[21]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[20]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[19]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[18]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[17]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[16]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[15]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[14]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[13]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[12]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[11]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[10]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[9]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[8]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[7]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[6]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[5]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[4]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[3]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[2]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[1]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[0]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[31]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[30]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[29]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[28]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[27]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[26]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[25]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[24]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[23]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[22]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[21]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[20]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[19]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[18]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[17]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[16]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[15]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[14]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[13]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[12]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[11]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[10]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[9]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[8]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[7]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[6]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[5]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[4]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[3]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[2]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[1]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_B[0]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[31]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[30]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[29]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[28]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[27]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[26]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[25]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[24]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[23]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[22]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[21]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[20]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[19]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[18]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[17]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[16]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[15]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[14]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[13]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[12]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[11]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[10]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[9]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[8]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[7]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[6]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[5]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[4]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[3]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[2]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[1]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_C[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 502.219 ; gain = 148.891
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 502.219 ; gain = 148.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 502.219 ; gain = 148.891
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/constrs_1/imports/bram_control_2.0/bram_control_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/constrs_1/imports/bram_control_2.0/bram_control_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/design_1_matrix_processor_ctrl_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/design_1_matrix_processor_ctrl_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 858.336 ; gain = 1.566
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 858.336 ; gain = 505.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 858.336 ; gain = 505.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/design_1_matrix_processor_ctrl_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 858.336 ; gain = 505.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "mem_address_A" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_address_A" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_address_C" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 's_nstate_reg' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/e6ee/matrix_processor_ctrl.v:102]
+WARNING: [Synth 8-327] inferring latch for variable 'ope_nstate_reg' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/e6ee/matrix_processor_ctrl.v:99]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_en_A_reg' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/e6ee/matrix_processor_ctrl.v:103]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_rst_A_reg' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/e6ee/matrix_processor_ctrl.v:105]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_byte_we_A_reg' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/e6ee/matrix_processor_ctrl.v:104]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_byte_we_C_reg' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/e6ee/matrix_processor_ctrl.v:112]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 858.336 ; gain = 505.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 24    
+	   3 Input      1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module matrix_processor_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 24    
+	   3 Input      1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[31]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[30]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[29]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_in_A[28]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ope_nstate_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_C_reg[1]' (LD) to 'inst/mem_byte_we_C_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_C_reg[2]' (LD) to 'inst/mem_byte_we_C_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\mem_byte_we_C_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_A_reg[0]' (LD) to 'inst/mem_byte_we_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_A_reg[1]' (LD) to 'inst/mem_byte_we_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_A_reg[2]' (LD) to 'inst/mem_byte_we_A_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\mem_byte_we_A_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/mem_rst_A_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/mem_en_A_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ope_cstate_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (ope_nstate_reg[3]) is unused and will be removed from module matrix_processor_ctrl.
+WARNING: [Synth 8-3332] Sequential element (mem_en_A_reg) is unused and will be removed from module matrix_processor_ctrl.
+WARNING: [Synth 8-3332] Sequential element (mem_rst_A_reg) is unused and will be removed from module matrix_processor_ctrl.
+WARNING: [Synth 8-3332] Sequential element (mem_byte_we_A_reg[3]) is unused and will be removed from module matrix_processor_ctrl.
+WARNING: [Synth 8-3332] Sequential element (mem_byte_we_C_reg[3]) is unused and will be removed from module matrix_processor_ctrl.
+WARNING: [Synth 8-3332] Sequential element (ope_cstate_reg[3]) is unused and will be removed from module matrix_processor_ctrl.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 858.336 ; gain = 505.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 858.336 ; gain = 505.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 877.398 ; gain = 524.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (s_nstate_reg[2]) is unused and will be removed from module matrix_processor_ctrl.
+WARNING: [Synth 8-3332] Sequential element (s_cstate_reg[2]) is unused and will be removed from module matrix_processor_ctrl.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 878.688 ; gain = 525.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 878.688 ; gain = 525.359
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 878.688 ; gain = 525.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 878.688 ; gain = 525.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 878.688 ; gain = 525.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 878.688 ; gain = 525.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 878.688 ; gain = 525.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    27|
+|2     |LUT2   |    70|
+|3     |LUT3   |    10|
+|4     |LUT4   |     1|
+|5     |LUT5   |     8|
+|6     |LUT6   |     8|
+|7     |FDRE   |   139|
+|8     |LD     |     6|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------------------+------+
+|      |Instance |Module                |Cells |
++------+---------+----------------------+------+
+|1     |top      |                      |   269|
+|2     |  inst   |matrix_processor_ctrl |   269|
++------+---------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 878.688 ; gain = 525.359
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 110 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 878.688 ; gain = 169.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 878.688 ; gain = 525.359
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LD => LDCE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 883.441 ; gain = 541.582
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/design_1_matrix_processor_ctrl_0_1_synth_1/design_1_matrix_processor_ctrl_0_1.dcp' has been generated.

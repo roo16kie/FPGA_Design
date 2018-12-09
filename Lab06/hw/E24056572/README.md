@@ -21,7 +21,11 @@ FPGA-based System Design - Lab06 HW
 
 <img src = "./image/design_1.png">
 
-我們有更改做部分的架構，使用了三個True Two Port的BRAM，PS與BRAM的溝通由AXI BRAM Controller負責，PL與Controller則不需要額外的Interface，因為BRAM本身就是在PL裡面了，統一由Controller發送讀寫訊號。
+我們有更改部分的架構，使用了三個True Two Port的BRAM，PS與BRAM的溝通由AXI BRAM Controller負責，PL與Controller則不需要額外的Interface，因為BRAM本身就是在PL裡面了，統一由Controller發送讀寫訊號。
+
+會不使用助教提供的BRAM Controller與BRAM是因為為了要同時讓PS與PL存取BRAM的資料，需要使用到Two Port的BRAM，因此我們選擇的是Vivado提供的兩個IP。  
+
+這次寫Controller的人員與其他組員沒有配合好，所以很多部分尚未完成，目前只有加法與減法功能有實作。
 
 <h3>Programming</h3>
 

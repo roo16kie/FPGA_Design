@@ -1,0 +1,471 @@
+
+*** Running vivado
+    with args -log design_1_matrix_processor_ctrl_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_matrix_processor_ctrl_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_matrix_processor_ctrl_0_0.tcl -notrace
+Command: synth_design -top design_1_matrix_processor_ctrl_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 884 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 448.781 ; gain = 94.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_matrix_processor_ctrl_0_0' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ip/design_1_matrix_processor_ctrl_0_0/synth/design_1_matrix_processor_ctrl_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'matrix_processor_ctrl' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/0b16/matrix_processor_ctrl.v:1]
+	Parameter ope_Idle bound to: 0 - type: integer 
+	Parameter ope_Read bound to: 1 - type: integer 
+	Parameter ope_Write bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'matrix_processor_ctrl' (1#1) [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/0b16/matrix_processor_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_matrix_processor_ctrl_0_0' (2#1) [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ip/design_1_matrix_processor_ctrl_0_0/synth/design_1_matrix_processor_ctrl_0_0.v:58]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[31]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[30]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[29]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[28]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[27]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[26]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[25]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[24]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[23]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[22]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[21]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[20]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[19]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[18]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[17]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[16]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[15]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[14]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[13]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[12]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[11]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[10]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[9]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[8]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[7]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[6]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[5]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[4]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[3]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[2]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[1]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 503.656 ; gain = 149.867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 503.656 ; gain = 149.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 503.656 ; gain = 149.867
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/constrs_1/imports/bram_control_2.0/bram_control_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/constrs_1/imports/bram_control_2.0/bram_control_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/design_1_matrix_processor_ctrl_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/design_1_matrix_processor_ctrl_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 864.035 ; gain = 1.512
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 864.035 ; gain = 510.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 864.035 ; gain = 510.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/design_1_matrix_processor_ctrl_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 864.035 ; gain = 510.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_byte_we_A" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_address_A" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_data_in_A" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'nstate_reg' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/0b16/matrix_processor_ctrl.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_en_A_reg' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/0b16/matrix_processor_ctrl.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_rst_A_reg' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/0b16/matrix_processor_ctrl.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_byte_we_A_reg' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/0b16/matrix_processor_ctrl.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_byte_we_B_reg' [c:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/ipshared/0b16/matrix_processor_ctrl.v:54]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 864.035 ; gain = 510.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module matrix_processor_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[31]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[30]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[29]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[28]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[27]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[26]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[25]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[24]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[23]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[22]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[21]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[20]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[19]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[18]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[17]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[16]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[15]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[14]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[13]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[12]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[11]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[10]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[9]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[8]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[7]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[6]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[5]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[4]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[3]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[2]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[1]
+WARNING: [Synth 8-3331] design matrix_processor_ctrl has unconnected port mem_data_out_B[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\nstate_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_B_reg[0]' (LD) to 'inst/mem_byte_we_B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_B_reg[1]' (LD) to 'inst/mem_byte_we_B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_B_reg[2]' (LD) to 'inst/mem_byte_we_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[0]' (FDE) to 'inst/mem_address_B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[1]' (FDE) to 'inst/mem_address_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[3]' (FDE) to 'inst/mem_address_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[4]' (FDE) to 'inst/mem_address_B_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[5]' (FDE) to 'inst/mem_address_B_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[6]' (FDE) to 'inst/mem_address_B_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[7]' (FDE) to 'inst/mem_address_B_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[8]' (FDE) to 'inst/mem_address_B_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[9]' (FDE) to 'inst/mem_address_B_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[10]' (FDE) to 'inst/mem_address_B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[11]' (FDE) to 'inst/mem_address_B_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[12]' (FDE) to 'inst/mem_address_B_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[13]' (FDE) to 'inst/mem_address_B_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[14]' (FDE) to 'inst/mem_address_B_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[15]' (FDE) to 'inst/mem_address_B_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[16]' (FDE) to 'inst/mem_address_B_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[17]' (FDE) to 'inst/mem_address_B_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[18]' (FDE) to 'inst/mem_address_B_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[19]' (FDE) to 'inst/mem_address_B_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[20]' (FDE) to 'inst/mem_address_B_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[21]' (FDE) to 'inst/mem_address_B_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[22]' (FDE) to 'inst/mem_address_B_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[23]' (FDE) to 'inst/mem_address_B_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[24]' (FDE) to 'inst/mem_address_B_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[25]' (FDE) to 'inst/mem_address_B_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[26]' (FDE) to 'inst/mem_address_B_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[27]' (FDE) to 'inst/mem_address_B_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[28]' (FDE) to 'inst/mem_address_B_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[29]' (FDE) to 'inst/mem_address_B_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[30]' (FDE) to 'inst/mem_address_B_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_B_reg[31]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_A_reg[0]' (LD) to 'inst/mem_byte_we_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_A_reg[1]' (LD) to 'inst/mem_byte_we_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_A_reg[2]' (LD) to 'inst/mem_byte_we_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_byte_we_A_reg[3]' (LD) to 'inst/mem_rst_A_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/mem_rst_A_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/mem_en_A_reg)
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[0]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[1]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[2]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[3]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[4]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[5]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[6]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[7]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[8]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[9]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[10]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[11]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[12]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[13]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[14]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[15]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[16]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[17]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[18]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[19]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[20]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[21]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[22]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[23]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[24]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[25]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[26]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[27]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[28]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[29]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_data_in_A_reg[30]' (FDE) to 'inst/mem_data_in_A_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\mem_data_in_A_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[0]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[1]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[2]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[3]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[4]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[5]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[6]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[7]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[8]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[9]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[10]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[11]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[12]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[13]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[14]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[15]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[16]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[17]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[18]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[19]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[20]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[21]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[22]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[23]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[24]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[25]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[26]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[27]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[28]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[29]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mem_address_A_reg[30]' (FDE) to 'inst/mem_address_A_reg[31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\mem_address_A_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cstate_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (nstate_reg[2]) is unused and will be removed from module matrix_processor_ctrl.
+WARNING: [Synth 8-3332] Sequential element (mem_en_A_reg) is unused and will be removed from module matrix_processor_ctrl.
+WARNING: [Synth 8-3332] Sequential element (mem_rst_A_reg) is unused and will be removed from module matrix_processor_ctrl.
+WARNING: [Synth 8-3332] Sequential element (cstate_reg[2]) is unused and will be removed from module matrix_processor_ctrl.
+WARNING: [Synth 8-3332] Sequential element (mem_data_in_A_reg[31]) is unused and will be removed from module matrix_processor_ctrl.
+WARNING: [Synth 8-3332] Sequential element (mem_address_A_reg[31]) is unused and will be removed from module matrix_processor_ctrl.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 864.035 ; gain = 510.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 864.035 ; gain = 510.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 864.504 ; gain = 510.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 874.031 ; gain = 520.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 874.031 ; gain = 520.242
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 874.031 ; gain = 520.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 874.031 ; gain = 520.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 874.031 ; gain = 520.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 874.031 ; gain = 520.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 874.031 ; gain = 520.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     3|
+|3     |LUT3 |     1|
+|4     |FDRE |    35|
+|5     |LD   |     3|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+----------------------+------+
+|      |Instance |Module                |Cells |
++------+---------+----------------------+------+
+|1     |top      |                      |    44|
+|2     |  inst   |matrix_processor_ctrl |    44|
++------+---------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 874.031 ; gain = 520.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 874.031 ; gain = 159.863
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 874.031 ; gain = 520.242
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LD => LDCE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+126 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 879.273 ; gain = 536.957
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/design_1_matrix_processor_ctrl_0_0_synth_1/design_1_matrix_processor_ctrl_0_0.dcp' has been generated.
