@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Dec  9 23:43:06 2018
+# Process ID: 28580
+# Current directory: C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24544 C:\Users\user\Documents\GitHub\FPGA_Design\Lab06\lab6\lab6.xpr
+# Log file: C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/vivado.log
+# Journal file: C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Documents/GitHub/FPGA_Design/Lab06/ip_repo/bram_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Documents/GitHub/FPGA_Design/Lab06/ip_repo/matrix_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 839.766 ; gain = 109.098
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk -hwspec C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk/hw6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk -hwspec C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk/hw6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk -hwspec C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk/hw6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk -hwspec C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk/hw6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.runs/impl_1/hw6_wrapper.sysdef C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk/hw6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk -hwspec C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk/hw6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk -hwspec C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk/hw6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
