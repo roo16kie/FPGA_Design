@@ -10,16 +10,16 @@ E24041810 E24046755 E24046307
 # Program 1.
 ### 設計一個矩陣運算的處理器，可做乘法，加法，減法，轉置，行列式運算。
 ### 設計說明
-1. 指令格式:32bits  
-    31~29:OPcode//0 for add; 1 for sub; 2 for mul; 3 for trans ; 4 for det
-	28~20:rs1//第一個矩陣的第一個資料位址  
-	19~11:rs2//第二個矩陣的第一個資料位址  
-	10~2 :rt//運算完結果存入的位址  
-	1~0  :沒有用到  
+1. 指令格式:32bits分配如下    
+    31到29:OPcode//0 for add; 1 for sub; 2 for mul; 3 for trans ; 4 for det
+	28到20:rs1//第一個矩陣的第一個資料位址  
+	19到11:rs2//第二個矩陣的第一個資料位址  
+	10到2 :rt//運算完結果存入的位址  
+	1到0  :沒有用到  
 	
 2. processor.v說明:  
     當en_inst為1時，輸入的data將被視為instruction並進行解碼，將解碼後的結果傳給controller，  
-	當en_data為1時，輸入的data將被視為data並依據OPcode進行運算  
+	當en_data為1時，輸入的data將被視為data並依據OPcode進行運算，    
 	當en_wb為1時，會將資料傳出去  
 	
 3. controller.v說明:  
