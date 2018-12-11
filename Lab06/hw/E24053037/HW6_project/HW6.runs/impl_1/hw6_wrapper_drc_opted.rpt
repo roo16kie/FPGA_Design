@@ -1,0 +1,142 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Dec  9 17:58:58 2018
+| Host         : LAPTOP-BJA1B3DR running 64-bit major release  (build 9200)
+| Command      : report_drc -file hw6_wrapper_drc_opted.rpt -pb hw6_wrapper_drc_opted.pb -rpx hw6_wrapper_drc_opted.rpx
+| Design       : hw6_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 21
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| CHECK-3   | Warning  | Report rule limit reached  | 1          |
+| REQP-1840 | Warning  | RAMB18 async control check | 20         |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[10] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[6]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[11] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[7]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/counter_19_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg has an input control pin hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/mem_reg/ADDRARDADDR[9] (net: hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/mem_i/address[5]) which is driven by a register (hw6_i/matrix_cal_0/inst/matrix_cal_v1_0_S00_AXI_inst/ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+
