@@ -1,0 +1,708 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 53908
+License: Customer
+
+Current time: 	Sun Dec 09 14:35:40 CST 2018
+Time zone: 	China Standard Time (Asia/Taipei)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 14 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	user
+User home directory: C:/Users/user
+User working directory: C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2018.2
+RDI_DATADIR: D:/Vivado/2018.2/data
+RDI_BINDIR: D:/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/vivado.log
+Vivado journal file location: 	C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/vivado.jou
+Engine tmp dir: 	C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/.Xil/Vivado-53908-Happy
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/2018.2
+XILINX_SDK: D:/SDK/2018.2
+XILINX_VIVADO: D:/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Vivado/2018.2
+
+
+GUI allocated memory:	152 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 496 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 52 MB (+52189kb) [00:00:19]
+// [Engine Memory]: 481 MB (+352508kb) [00:00:19]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\user\Documents\GitHub\FPGA_Design\Lab06\lab6\lab6.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 58 MB (+3863kb) [00:00:23]
+// Tcl Message: open_project C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 496 MB. GUI used memory: 34 MB. Current time: 12/9/18 2:35:42 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Documents/GitHub/FPGA_Design/Lab06/ip_repo/bram_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Documents/GitHub/FPGA_Design/Lab06/ip_repo/matrix_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 535 MB (+31426kb) [00:00:40]
+// [Engine Memory]: 574 MB (+13594kb) [00:00:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 582 MB. GUI used memory: 41 MB. Current time: 12/9/18 2:36:00 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 744.391 ; gain = 54.027 
+// Project name: lab6; location: C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, ck)
+// PAPropertyPanels.initPanels (constrs_1) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+dismissDialog("Add Sources"); // c (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// aF (ck): Create Block Design: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aF)
+dismissDialog("Create Block Design"); // aF (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+dismissDialog("Add Sources"); // c (ck)
+// [Engine Memory]: 615 MB (+12298kb) [00:00:59]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// C (ck): Settings: addNotify
+// 'dx' command handler elapsed time: 3 seconds
+// [GUI Memory]: 78 MB (+17484kb) [00:01:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 615 MB. GUI used memory: 57 MB. Current time: 12/9/18 2:36:20 PM CST
+// Elapsed time: 10 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6, true); // M (C) - Node
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // M (C)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // M (C)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL, "Refresh All"); // a (C)
+// TclEventType: CREATE_IP_CATALOG
+// bx (ck):  Refresh All IP Repositories : addNotify
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Documents/GitHub/FPGA_Design/Lab06/ip_repo/bram_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Documents/GitHub/FPGA_Design/Lab06/ip_repo/matrix_1.0'. 
+dismissDialog("Refresh All IP Repositories"); // bx (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+// [GUI Memory]: 84 MB (+2477kb) [00:01:15]
+// bx (ck):  Change Settings : addNotify
+// TclEventType: CREATE_IP_CATALOG
+dismissDialog("Change Settings"); // bx (ck)
+dismissDialog("Settings"); // C (ck)
+// Tcl Message: update_ip_catalog 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3, true); // B (D, ck) - Node
+// [GUI Memory]: 97 MB (+8903kb) [00:01:20]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// aF (ck): Create Block Design: addNotify
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "hw6"); // X (Q, aF)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aF)
+// 'J' command handler elapsed time: 8 seconds
+dismissDialog("Create Block Design"); // aF (ck)
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Create Block Design : addNotify
+// Tcl Message: create_bd_design "hw6" 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Wrote  : <C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/hw6.bd>  
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 58 MB. Current time: 12/9/18 2:36:52 PM CST
+// [Engine Memory]: 676 MB (+32110kb) [00:01:39]
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 712 MB (+1898kb) [00:01:44]
+// Tcl Message: create_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 859.809 ; gain = 79.816 
+// Elapsed time: 16 seconds
+dismissDialog("Create Block Design"); // bx (ck)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, ck)
+// Tcl Message: update_compile_order -fileset sources_1 
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "zy"); // OverlayTextField (Q, ResizableWindow)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // O (O, ResizableWindow)
+// bx (ck):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 
+// TclEventType: LOAD_FEATURE
+// [Engine Memory]: 767 MB (+20407kb) [00:01:57]
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 780 MB. GUI used memory: 61 MB. Current time: 12/9/18 2:37:17 PM CST
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 916.461 ; gain = 56.652 
+// Tcl Message: endgroup 
+// Elapsed time: 10 seconds
+dismissDialog("Add IP"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, ck)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "bram"); // OverlayTextField (Q, ResizableWindow)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // O (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "bram_v1.0", 2, "bram_v1.0", 0, false); // O (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "bram_v1.0", 2); // O (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "bram_v1.0", 2, "bram_v1.0", 0, false, false, false, false, false, true); // O (O, ResizableWindow) - Double Click
+// bx (ck):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:bram:1.0 bram_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, ck)
+// Elapsed time: 10 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "matrix"); // OverlayTextField (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "matrix_v1.0", 1, "matrix_v1.0", 0, false); // O (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "matrix_v1.0", 1); // O (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "matrix_v1.0", 1, "matrix_v1.0", 0, false, false, false, false, false, true); // O (O, ResizableWindow) - Double Click
+// bx (ck):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:matrix:1.0 matrix_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Command: 'set_property location {0.5 24 -40} [get_bd_cells processing_system7_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {0.5 24 -40} [get_bd_cells processing_system7_0] 
+// Tcl Command: 'set_property location {3 482 -50} [get_bd_cells matrix_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 482 -50} [get_bd_cells matrix_0] 
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION, "Run Block Automation"); // h (cs, ck)
+// w (ck): Run Block Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+dismissDialog("Run Block Automation"); // w (ck)
+// TclEventType: RSB_SCRIPT_TASK
+// bx (ck):  Run Block Automation : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 806 MB. GUI used memory: 67 MB. Current time: 12/9/18 2:37:52 PM CST
+// [Engine Memory]: 809 MB (+3589kb) [00:02:36]
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: apply_bd_automation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 940.078 ; gain = 14.066 
+// Tcl Message: endgroup 
+dismissDialog("Run Block Automation"); // bx (ck)
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (cs, ck)
+// w (ck): Run Connection Automation: addNotify
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (0 out of 2 selected)]", 0, true, false, ui.utils.TriState.False); // K (O, w) - Node
+// [GUI Memory]: 102 MB (+534kb) [00:02:43]
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (2 out of 2 selected)]", 0, true, true, ui.utils.TriState.True); // K (O, w) - Node
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+dismissDialog("Run Connection Automation"); // w (ck)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: IP_LOCK_CHANGE
+// bx (ck):  Run Connection Automation : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/bram_0/S00_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins bram_0/S00_AXI] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Tcl Message: </bram_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]> 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/matrix_0/S00_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins matrix_0/S00_AXI] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// HMemoryUtils.trashcanNow. Engine heap size: 837 MB. GUI used memory: 66 MB. Current time: 12/9/18 2:38:08 PM CST
+// Tcl Message: </matrix_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C10000 [ 64K ]> 
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Tcl Command: 'set_property location {1 120 -150} [get_bd_cells processing_system7_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 120 -150} [get_bd_cells processing_system7_0] 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// Tcl Command: 'set_property location {2 642 -140} [get_bd_cells ps7_0_axi_periph]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 642 -140} [get_bd_cells ps7_0_axi_periph] 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_interconnect_aresetn 
+// Tcl Command: 'set_property location {2.5 1041 -360} [get_bd_cells bram_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2.5 1041 -360} [get_bd_cells bram_0] 
+// Tcl Command: 'set_property location {3 1009 -123} [get_bd_cells matrix_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 1009 -123} [get_bd_cells matrix_0] 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Tcl Command: 'set_property location {2 647 -349} [get_bd_cells rst_ps7_0_100M]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 647 -349} [get_bd_cells rst_ps7_0_100M] 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// [GUI Memory]: 108 MB (+710kb) [00:03:16]
+// Elapsed time: 25 seconds
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[hw6, External Interfaces]", 1, true); // i (O, ck) - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[hw6]", 0, true); // i (O, ck) - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[hw6, Interface Connections]", 2, true); // i (O, ck) - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[hw6, External Interfaces]", 1, true); // i (O, ck) - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[hw6, External Interfaces]", 1, true, false, false, false, false, true); // i (O, ck) - Double Click - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[hw6, External Interfaces]", 1, true); // i (O, ck) - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[hw6, External Interfaces]", 1, true, false, false, false, false, true); // i (O, ck) - Double Click - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[hw6, Interface Connections]", 2, true); // i (O, ck) - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[hw6, Interface Connections, processing_system7_0_FIXED_IO]", 4, false, false, false, false, false, true); // i (O, ck) - Double Click
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[hw6, Interface Connections]", 2, true); // i (O, ck) - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[hw6, Interface Connections]", 2, true, false, false, false, false, true); // i (O, ck) - Double Click - Node
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// bx (ck):  Validate Design : addNotify
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 850 MB (+1123kb) [00:03:25]
+// TclEventType: RSB_PARAM_PROP
+dismissDialog("Validate Design"); // bx (ck)
+selectButton("PAResourceTtoZ.ValidateRSBDesign_VALIDATION_SUCCESSFUL_THERE_NO_OK", "OK"); // JButton (A, G)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /hw6 
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Save Design : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/hw6.bd>  Wrote  : <C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/ui/bd_5377f227.ui>  
+dismissDialog("Save Design"); // bx (ck)
+// [GUI Memory]: 114 MB (+717kb) [00:03:32]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("IP Integrator", "Block Design", "DesignTask.IP_INTEGRATOR");
+// A (ck): Confirm Close: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 862 MB. GUI used memory: 68 MB. Current time: 12/9/18 2:38:52 PM CST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: close_bd_design [get_bd_designs hw6] 
+dismissDialog("Confirm Close"); // A (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hw6 (hw6.bd)]", 1, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (ck): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+dismissDialog("Create HDL Wrapper"); // a (ck)
+// TclEventType: RSB_LOCK_CHANGE
+// bx (ck):  Create HDL Wrapper : addNotify
+// Tcl Message: make_wrapper -files [get_files C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/hw6.bd] -top 
+// Tcl Message: INFO: [BD 41-1662] The design 'hw6.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: VHDL Output written to : C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/synth/hw6.v VHDL Output written to : C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/sim/hw6.v VHDL Output written to : C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/hdl/hw6_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/hdl/hw6_wrapper.v 
+// [Engine Memory]: 961 MB (+71399kb) [00:03:42]
+dismissDialog("Create HDL Wrapper"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hw6_wrapper (hw6_wrapper.v)]", 1); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hw6_wrapper (hw6_wrapper.v), hw6_i : hw6 (hw6.bd), hw6 (hw6.v)]", 3); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // ax (f, ck)
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,004 MB. GUI used memory: 63 MB. Current time: 12/9/18 2:39:12 PM CST
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'hw6.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/synth/hw6.v VHDL Output written to : C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/sim/hw6.v VHDL Output written to : C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/hdl/hw6_wrapper.v 
+// [Engine Memory]: 1,038 MB (+29923kb) [00:04:01]
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 652ms to process. Increasing delay to 4000 ms.
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block matrix_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/hw_handoff/hw6.hwh Generated Block Design Tcl file C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/hw_handoff/hw6_bd.tcl 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: Generated Hardware Definition File C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.srcs/sources_1/bd/hw6/synth/hw6.hwdef 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Dec  9 14:40:08 2018] Launched impl_1... Run output will be captured here: C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:45 ; elapsed = 00:00:57 . Memory (MB): peak = 1179.875 ; gain = 93.438 
+// PAPropertyPanels.initPanels (hw6.bd) elapsed time: 0.4s
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 598ms to process. Increasing delay to 3000 ms.
+// Elapsed time: 57 seconds
+dismissDialog("Generate Bitstream"); // bx (ck)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 228ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 22218 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 32012 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4257 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 11484 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 27321 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8240 ms. Increasing delay to 5000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1057ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1001ms to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,068 MB. GUI used memory: 72 MB. Current time: 12/9/18 2:42:20 PM CST
+// Elapsed time: 133 seconds
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+// Elapsed time: 12 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_bram_0_0_synth_1, [Synth 8-3331] design memory_ctrl has unconnected port cmd[7]. ]", 21); // ah (O, ck)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_bram_0_0_synth_1, [Synth 8-3331] design memory_ctrl has unconnected port cmd[7]. ]", 21); // ah (O, ck)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_bram_0_0_synth_1, [Synth 8-3332] Sequential element (bram_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module bram_v1_0.. ]", 22); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_bram_0_0_synth_1, [Synth 8-3332] Sequential element (bram_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module bram_v1_0.. ]", 22, true); // ah (O, ck) - Node
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_bram_0_0_synth_1, [Synth 8-3332] Sequential element (bram_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module bram_v1_0.. ]", 22); // ah (O, ck)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_bram_0_0_synth_1, [Constraints 18-5210] No constraint will be written out.. ]", 23); // ah (O, ck)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_bram_0_0_synth_1, [Constraints 18-5210] No constraint will be written out.. ]", 23); // ah (O, ck)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_rst_ps7_0_100M_0_synth_1, [Constraints 18-5210] No constraint will be written out.. ]", 19); // ah (O, ck)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_rst_ps7_0_100M_0_synth_1, [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.. ]", 18); // ah (O, ck)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_rst_ps7_0_100M_0_synth_1, [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.. ]", 18); // ah (O, ck)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_rst_ps7_0_100M_0_synth_1, [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.. ]", 18); // ah (O, ck)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, hw6, hw6_rst_ps7_0_100M_0_synth_1, [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.. ]", 18); // ah (O, ck)
+// [GUI Memory]: 121 MB (+1084kb) [00:08:13]
+// [GUI Memory]: 130 MB (+2392kb) [00:08:33]
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 138 MB (+1730kb) [00:08:40]
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,089 MB. GUI used memory: 72 MB. Current time: 12/9/18 2:44:00 PM CST
+// [Engine Memory]: 1,090 MB (+351kb) [00:08:51]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 519 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Netlist, Instance, Required Pin, RAMB18E1, [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hw6_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/mem_reg has an input control pin hw6_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/mem_reg/ENARDEN (net: hw6_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/mem_reg_ENARDEN_cooolgate_en_sig_4) which is driven by a register (hw6_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.. ]", 52, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "pin;-;hw6_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i/mem_reg/ENARDEN;-;;-;10;-;"); // ah (O, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 74 MB. Current time: 12/9/18 3:14:00 PM CST
+// Elapsed time: 2199 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (ck): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (Q, X): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+dismissDialog("Export Hardware"); // X (ck)
+// Tcl Message: file mkdir C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk 
+// Tcl Message: file copy -force C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.runs/impl_1/hw6_wrapper.sysdef C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk/hw6_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (ck): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (ck)
+// Tcl Message: launch_sdk -workspace C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk -hwspec C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk/hw6_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk -hwspec C:/Users/user/Documents/GitHub/FPGA_Design/Lab06/lab6/lab6.sdk/hw6_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 69 MB. Current time: 12/9/18 3:44:00 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 63 MB. Current time: 12/9/18 4:14:01 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 66 MB. Current time: 12/9/18 4:44:01 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 66 MB. Current time: 12/9/18 5:14:01 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 65 MB. Current time: 12/9/18 5:44:01 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 66 MB. Current time: 12/9/18 6:14:01 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 63 MB. Current time: 12/9/18 6:44:02 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 65 MB. Current time: 12/9/18 7:14:02 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 66 MB. Current time: 12/9/18 7:44:03 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 66 MB. Current time: 12/9/18 8:14:03 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 63 MB. Current time: 12/9/18 8:44:03 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 68 MB. Current time: 12/9/18 9:14:04 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 66 MB. Current time: 12/9/18 9:44:04 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 66 MB. Current time: 12/9/18 10:14:04 PM CST

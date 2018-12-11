@@ -1,0 +1,1 @@
+create_clock -name matrix_clk -period 10 [get_ports s00_axi_aclk]
