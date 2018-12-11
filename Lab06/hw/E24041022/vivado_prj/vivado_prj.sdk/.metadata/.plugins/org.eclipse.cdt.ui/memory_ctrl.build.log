@@ -1,0 +1,29 @@
+13:47:44 **** Incremental Build of configuration Debug for project memory_ctrl ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: memory_ctrl.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../memory_ctrl_bsp/ps7_cortexa9_0/lib -o "memory_ctrl.elf"  ./src/memory_ctrl.o   
+d:/xilinx/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _vector_table; defaulting to 0000000000100000
+./src/memory_ctrl.o: In function `main':
+C:\Users\User\Desktop\FPGA_Design-master\Lab06\vivado_prj\vivado_prj.sdk\memory_ctrl\Debug/../src/memory_ctrl.c:60: undefined reference to `print'
+d:/xilinx/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-sbrkr.o): In function `_sbrk_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/lin/arm/arm-linux/snapshots/newlib-newlib-2_4_0/newlib/libc/reent/sbrkr.c:58: undefined reference to `_sbrk'
+d:/xilinx/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-writer.o): In function `_write_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/lin/arm/arm-linux/snapshots/newlib-newlib-2_4_0/newlib/libc/reent/writer.c:58: undefined reference to `_write'
+d:/xilinx/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-closer.o): In function `_close_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/lin/arm/arm-linux/snapshots/newlib-newlib-2_4_0/newlib/libc/reent/closer.c:53: undefined reference to `_close'
+d:/xilinx/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fstatr.o): In function `_fstat_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/lin/arm/arm-linux/snapshots/newlib-newlib-2_4_0/newlib/libc/reent/fstatr.c:62: undefined reference to `_fstat'
+d:/xilinx/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-isattyr.o): In function `_isatty_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/lin/arm/arm-linux/snapshots/newlib-newlib-2_4_0/newlib/libc/reent/isattyr.c:58: undefined reference to `_isatty'
+d:/xilinx/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-lseekr.o): In function `_lseek_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/lin/arm/arm-linux/snapshots/newlib-newlib-2_4_0/newlib/libc/reent/lseekr.c:58: undefined reference to `_lseek'
+d:/xilinx/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-readr.o): In function `_read_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/lin/arm/arm-linux/snapshots/newlib-newlib-2_4_0/newlib/libc/reent/readr.c:58: undefined reference to `_read'
+collect2.exe: error: ld returned 1 exit status
+make: *** [memory_ctrl.elf] Error 1
+
+13:47:45 Build Finished (took 905ms)
+
