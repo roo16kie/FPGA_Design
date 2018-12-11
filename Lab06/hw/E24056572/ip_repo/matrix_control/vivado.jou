@@ -1,0 +1,646 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Dec  9 00:30:32 2018
+# Process ID: 1636
+# Current directory: C:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13764 C:\Users\ricky\Desktop\Xilinx-designtool\project\ip_repo\matrix_control\matrix_control.xpr
+# Log file: C:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/vivado.log
+# Journal file: C:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/bram_control_2.0/bram_control_ooc.xdc
+import_files -fileset constrs_1 C:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/bram_control_2.0/bram_control_ooc.xdc
+set_property USED_IN {synthesis implementation out_of_context} [get_files C:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/constrs_1/imports/bram_control_2.0/bram_control_ooc.xdc]
+ipx::open_ipxact_file {C:\Users\ricky\Desktop\Xilinx-designtool\project\ip_repo\matrix_control\matrix_control.srcs\sources_1\imports\matrix_control\component.xml}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::add_bus_interface BRAM_A [ipx::current_core]
+set_property abstraction_type_vlnv xilinx.com:interface:bram_rtl:1.0 [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]
+set_property bus_type_vlnv xilinx.com:interface:bram:1.0 [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]
+set_property interface_mode master [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]
+ipx::add_port_map RST [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]
+set_property physical_name mem_rst_n_A [ipx::get_port_maps RST -of_objects [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]]
+ipx::add_port_map CLK [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]
+set_property physical_name mem_clk_A [ipx::get_port_maps CLK -of_objects [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]]
+ipx::add_port_map DIN [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]
+set_property physical_name mem_data_in_A [ipx::get_port_maps DIN -of_objects [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]]
+ipx::add_port_map EN [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]
+set_property physical_name mem_en_A [ipx::get_port_maps EN -of_objects [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]]
+ipx::add_port_map DOUT [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]
+set_property physical_name mem_data_out_A [ipx::get_port_maps DOUT -of_objects [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]]
+ipx::add_port_map WE [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]
+set_property physical_name mem_byte_we_A [ipx::get_port_maps WE -of_objects [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]]
+ipx::add_port_map ADDR [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]
+set_property physical_name mem_address_A [ipx::get_port_maps ADDR -of_objects [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]]
+ipx::add_bus_interface BRAM_B [ipx::current_core]
+set_property abstraction_type_vlnv xilinx.com:interface:bram_rtl:1.0 [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]
+set_property bus_type_vlnv xilinx.com:interface:bram:1.0 [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]
+set_property interface_mode master [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]
+ipx::add_port_map RST [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]
+set_property physical_name mem_rst_n_B [ipx::get_port_maps RST -of_objects [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]]
+ipx::add_port_map CLK [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]
+set_property physical_name mem_clk_B [ipx::get_port_maps CLK -of_objects [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]]
+ipx::add_port_map DIN [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]
+set_property physical_name mem_data_in_B [ipx::get_port_maps DIN -of_objects [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]]
+ipx::add_port_map EN [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]
+set_property physical_name mem_en_B [ipx::get_port_maps EN -of_objects [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]]
+ipx::add_port_map DOUT [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]
+set_property physical_name mem_data_out_B [ipx::get_port_maps DOUT -of_objects [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]]
+ipx::add_port_map WE [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]
+set_property physical_name mem_byte_we_B [ipx::get_port_maps WE -of_objects [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]]
+ipx::add_port_map ADDR [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]
+set_property physical_name mem_address_B [ipx::get_port_maps ADDR -of_objects [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]]
+ipx::add_bus_interface BRAM_C [ipx::current_core]
+set_property abstraction_type_vlnv xilinx.com:interface:bram_rtl:1.0 [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property bus_type_vlnv xilinx.com:interface:bram:1.0 [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property interface_mode master [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+ipx::add_port_map RST [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_rst_n_C [ipx::get_port_maps RST -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map CLK [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_clk_C [ipx::get_port_maps CLK -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map DIN [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_data_in_C [ipx::get_port_maps DIN -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map EN [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_en_C [ipx::get_port_maps EN -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map DOUT [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_data_out_C [ipx::get_port_maps DOUT -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map WE [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_byte_we_C [ipx::get_port_maps WE -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map ADDR [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_address_C [ipx::get_port_maps ADDR -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::add_port_map RST [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]
+set_property physical_name mem_rst_A [ipx::get_port_maps RST -of_objects [ipx::get_bus_interfaces BRAM_A -of_objects [ipx::current_core]]]
+ipx::add_port_map RST [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]
+set_property physical_name mem_rst_A [ipx::get_port_maps RST -of_objects [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]]
+ipx::add_port_map RST [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_rst_C [ipx::get_port_maps RST -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+set_property physical_name mem_rst_B [ipx::get_port_maps RST -of_objects [ipx::get_bus_interfaces BRAM_B -of_objects [ipx::current_core]]]
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+export_ip_user_files -of_objects  [get_files C:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/bram_control_2.0/bram_control.v] -no_script -reset -force -quiet
+remove_files  C:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/bram_control_2.0/bram_control.v
+file delete -force C:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/bram_control_2.0/bram_control.v
+ipx::remove_file ../bram_control_2.0/bram_control.v [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]
+ipx::remove_file ../bram_control_2.0/bram_control.v [ipx::get_file_groups xilinx_anylanguagebehavioralsimulation -of_objects [ipx::current_core]]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 7 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 8 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_project C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.srcs/sources_1/bd/design_1/design_1.bd}
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk/design_1_wrapper.hdf
+ipx::edit_ip_in_project -upgrade true -name l2_hw2_top_v1_0_project -directory C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.tmp/l2_hw2_top_v1_0_project c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/test/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 11 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo
+update_ip_catalog -rebuild
+update_ip_catalog
+delete_bd_objs [get_bd_nets sw_1] [get_bd_nets l2_hw2_top_0_led4_r] [get_bd_nets l2_hw2_top_0_led4_b] [get_bd_intf_nets l2_hw2_top_0_bram] [get_bd_nets btn_1] [get_bd_nets l2_hw2_top_0_led] [get_bd_nets l2_hw2_top_0_led4_g] [get_bd_cells l2_hw2_top_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:l2_hw2_top:1.0 l2_hw2_top_0
+endgroup
+set_property location {2 439 146} [get_bd_cells l2_hw2_top_0]
+connect_bd_net [get_bd_ports btn] [get_bd_pins l2_hw2_top_0/btn]
+connect_bd_net [get_bd_ports sw] [get_bd_pins l2_hw2_top_0/sw]
+connect_bd_net [get_bd_pins l2_hw2_top_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_intf_net [get_bd_intf_pins l2_hw2_top_0/bram] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA]
+connect_bd_net [get_bd_ports led] [get_bd_pins l2_hw2_top_0/led4_r]
+delete_bd_objs [get_bd_nets l2_hw2_top_0_led4_r]
+connect_bd_net [get_bd_ports led] [get_bd_pins l2_hw2_top_0/led]
+connect_bd_net [get_bd_ports led4_g] [get_bd_pins l2_hw2_top_0/led4_r]
+delete_bd_objs [get_bd_nets l2_hw2_top_0_led4_r]
+connect_bd_net [get_bd_ports led4_r] [get_bd_pins l2_hw2_top_0/led4_r]
+connect_bd_net [get_bd_ports led4_g] [get_bd_pins l2_hw2_top_0/led4_g]
+connect_bd_net [get_bd_ports led4_b] [get_bd_pins l2_hw2_top_0/led4_b]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name l2_hw2_top_v1_0_project -directory C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.tmp/l2_hw2_top_v1_0_project c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/test/component.xml
+update_compile_order -fileset sources_1
+current_project test2
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk/design_1_wrapper.hdf
+file mkdir C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk/design_1_wrapper.hdf
+current_project l2_hw2_top_v1_0_project
+close_project
+close_project
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+set_property core_revision 9 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 10 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 11 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 12 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 13 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 14 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::remove_bus_interface BRAM_C [ipx::current_core]
+ipx::remove_port mem_address_C [ipx::current_core]
+ipx::remove_port mem_clk_C [ipx::current_core]
+ipx::remove_port mem_data_in_C [ipx::current_core]
+ipx::remove_port mem_data_out_C [ipx::current_core]
+ipx::remove_port mem_en_C [ipx::current_core]
+ipx::remove_port mem_rst_C [ipx::current_core]
+ipx::remove_port mem_byte_we_C [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 15 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 16 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 17 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 18 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::add_bus_interface BRAM_C [ipx::current_core]
+set_property abstraction_type_vlnv xilinx.com:interface:aximm_rtl:1.0 [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property bus_type_vlnv xilinx.com:interface:aximm:1.0 [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property interface_mode master [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+ipx::add_bus_parameter NUM_READ_OUTSTANDING [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+ipx::add_bus_parameter NUM_WRITE_OUTSTANDING [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property abstraction_type_vlnv xilinx.com:interface:bram_rtl:1.0 [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property bus_type_vlnv xilinx.com:interface:bram:1.0 [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+ipx::add_port_map RST [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_rst_C [ipx::get_port_maps RST -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map CLK [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_clk_C [ipx::get_port_maps CLK -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map DIN [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_data_in_C [ipx::get_port_maps DIN -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map EN [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_en_C [ipx::get_port_maps EN -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map DOUT [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_data_out_C [ipx::get_port_maps DOUT -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map WE [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_byte_we_C [ipx::get_port_maps WE -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+ipx::add_port_map ADDR [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]
+set_property physical_name mem_address_C [ipx::get_port_maps ADDR -of_objects [ipx::get_bus_interfaces BRAM_C -of_objects [ipx::current_core]]]
+set_property core_revision 19 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 20 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 21 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 22 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/matrix_control/matrix_control.srcs/sources_1/imports/matrix_control
+1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+update_ip_catalog -rebuild
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {1 950 220} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_cells matrix_processor_ctrl_0]
+update_ip_catalog -rebuild
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {1 937 -71} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+open_project C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name l2_hw2_top_v1_0_project -directory C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.tmp/l2_hw2_top_v1_0_project c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/test/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 12 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo
+update_ip_catalog -rebuild
+update_ip_catalog
+delete_bd_objs [get_bd_intf_nets l2_hw2_top_0_bram] [get_bd_nets sw_1] [get_bd_nets btn_1] [get_bd_nets l2_hw2_top_0_led] [get_bd_nets l2_hw2_top_0_led4_r] [get_bd_nets l2_hw2_top_0_led4_g] [get_bd_nets l2_hw2_top_0_led4_b] [get_bd_cells l2_hw2_top_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:l2_hw2_top:1.0 l2_hw2_top_0
+endgroup
+set_property location {2 454 126} [get_bd_cells l2_hw2_top_0]
+set_property location {1 455 125} [get_bd_cells l2_hw2_top_0]
+connect_bd_intf_net [get_bd_intf_pins l2_hw2_top_0/bram] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA]
+connect_bd_net [get_bd_ports led4_r] [get_bd_pins l2_hw2_top_0/led4_r]
+connect_bd_net [get_bd_ports led4_g] [get_bd_pins l2_hw2_top_0/led4_g]
+connect_bd_net [get_bd_ports led] [get_bd_pins l2_hw2_top_0/led]
+connect_bd_net [get_bd_ports led4_b] [get_bd_pins l2_hw2_top_0/led4_b]
+connect_bd_net [get_bd_ports btn] [get_bd_pins l2_hw2_top_0/btn]
+connect_bd_net [get_bd_pins l2_hw2_top_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_ports sw] [get_bd_pins l2_hw2_top_0/sw]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name l2_hw2_top_v1_0_project -directory C:/Users/ricky/Desktop/Xilinx-designtool/project/test2/test2.tmp/l2_hw2_top_v1_0_project c:/Users/ricky/Desktop/Xilinx-designtool/project/ip_repo/test/component.xml
+update_compile_order -fileset sources_1
+close_project
+current_project Lab6
+update_ip_catalog -rebuild
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+save_bd_design
+launch_runs synth_1 -jobs 8
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_cells matrix_processor_ctrl_0]
+save_bd_design
+launch_runs synth_1 -jobs 8
+save_bd_design
+current_project test2
+close_project
+update_ip_catalog -rebuild
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+reset_run synth_1
+reset_run design_1_axi_smc_0_synth_1
+set_property location {2 918 -140} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+update_ip_catalog -rebuild
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {1 858 -161} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+update_ip_catalog -rebuild
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {1 860 -139} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B]
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C]
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B] [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+update_ip_catalog -rebuild
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+update_ip_catalog -rebuild
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {2 937 -207} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B] [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+update_ip_catalog -rebuild
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {2 957 -167} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {2 858 -239} [get_bd_cells matrix_processor_ctrl_0]
+set_property location {1 808 -299} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B] [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {2 830 -307} [get_bd_cells matrix_processor_ctrl_0]
+delete_bd_objs [get_bd_cells matrix_processor_ctrl_0]
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {2 783 -270} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {2 757 -319} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B] [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_cells matrix_processor_ctrl_0]
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {2 901 -272} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B] [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+report_ip_status -name ip_status 
+close_design
+open_run synth_1 -name synth_1
+open_bd_design {C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_B] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_C] [get_bd_intf_nets matrix_processor_ctrl_0_BRAM_A] [get_bd_cells matrix_processor_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix_processor_ctrl:1.0 matrix_processor_ctrl_0
+endgroup
+set_property location {2 872 -260} [get_bd_cells matrix_processor_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_C] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTB]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_1/BRAM_PORTB] [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_B]
+connect_bd_intf_net [get_bd_intf_pins matrix_processor_ctrl_0/BRAM_A] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+connect_bd_net [get_bd_pins matrix_processor_ctrl_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.runs/impl_1/design_1_wrapper.sysdef C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk -hwspec C:/Users/ricky/Desktop/Xilinx-designtool/project/Lab6/Lab6.sdk/design_1_wrapper.hdf
