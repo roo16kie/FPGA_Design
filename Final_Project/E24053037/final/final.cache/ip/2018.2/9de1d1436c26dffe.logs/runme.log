@@ -1,0 +1,401 @@
+
+*** Running vivado
+    with args -log FFT_system_FFT_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_system_FFT_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source FFT_system_FFT_0_0.tcl -notrace
+Command: synth_design -top FFT_system_FFT_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 54252 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 388.617 ; gain = 97.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FFT_system_FFT_0_0' [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ip/FFT_system_FFT_0_0/synth/FFT_system_FFT_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'FFT_v1_0' [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/FFT_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_v1_0_S00_AXI' [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/FFT_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/FFT_v1_0_S00_AXI.v:255]
+INFO: [Synth 8-226] default block is never used [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/FFT_v1_0_S00_AXI.v:492]
+INFO: [Synth 8-6157] synthesizing module 'FFT' [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/FFT.v:4]
+	Parameter w0r bound to: 9'b000000001 
+	Parameter w0i bound to: 9'b000000000 
+	Parameter w1r bound to: 9'b010110101 
+	Parameter w1i bound to: 9'b101001011 
+	Parameter w2r bound to: 9'b000000000 
+	Parameter w2i bound to: 9'b111111111 
+	Parameter w3r bound to: 9'b101001011 
+	Parameter w3i bound to: 9'b101001011 
+INFO: [Synth 8-6157] synthesizing module 'bfly2_4' [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/bfiy2_4.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bfly2_4' (1#1) [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/bfiy2_4.v:4]
+INFO: [Synth 8-6157] synthesizing module 'bfly4_4' [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/bfiy4_4.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bfly4_4' (2#1) [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/bfiy4_4.v:4]
+WARNING: [Synth 8-3848] Net done in module/entity FFT does not have driver. [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/FFT.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT' (3#1) [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/FFT.v:4]
+WARNING: [Synth 8-350] instance 'nolabel_line539' of module 'FFT' requires 13 connections, but only 12 given [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/FFT_v1_0_S00_AXI.v:539]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_v1_0_S00_AXI' (4#1) [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/FFT_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_v1_0' (5#1) [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ipshared/f0e7/hdl/FFT_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_system_FFT_0_0' (6#1) [c:/Users/Leo/Desktop/FPGA/final/final.srcs/sources_1/bd/FFT_system/ip/FFT_system_FFT_0_0/synth/FFT_system_FFT_0_0.v:57]
+WARNING: [Synth 8-3331] design FFT has unconnected port done
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 443.781 ; gain = 152.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 443.781 ; gain = 152.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 443.781 ; gain = 152.645
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 791.063 ; gain = 2.578
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:48 . Memory (MB): peak = 791.063 ; gain = 499.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:48 . Memory (MB): peak = 791.063 ; gain = 499.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:48 . Memory (MB): peak = 791.063 ; gain = 499.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:50 . Memory (MB): peak = 791.063 ; gain = 499.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      9 Bit       Adders := 6     
+	   3 Input      9 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 17    
+	                9 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 18    
+	  16 Input     32 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bfly4_4 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      9 Bit       Adders := 3     
+	   3 Input      9 Bit       Adders := 1     
+Module FFT 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 2     
+Module FFT_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 17    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 18    
+	  16 Input     32 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design FFT has unconnected port done
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design FFT_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'inst/FFT_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/FFT_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_v1_0_S00_AXI_inst /\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/FFT_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/FFT_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_v1_0_S00_AXI_inst /\axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (axi_bresp_reg[1]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[1]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[0]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[1]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[0]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_rresp_reg[1]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[31]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[30]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[29]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[28]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[27]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[26]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[25]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[24]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[23]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[22]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[21]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[20]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[19]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[18]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[17]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[16]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[15]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[14]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[13]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[12]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[11]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[10]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[9]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[31]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[30]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[29]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[28]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[27]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[26]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[25]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[24]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[23]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[22]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[21]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[20]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[19]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[18]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[17]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[16]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[15]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[14]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[13]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[12]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[11]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[10]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg1_reg[9]) is unused and will be removed from module FFT_v1_0_S00_AXI.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 791.063 ; gain = 499.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:16 . Memory (MB): peak = 799.563 ; gain = 508.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:16 . Memory (MB): peak = 800.383 ; gain = 509.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:01:17 . Memory (MB): peak = 817.020 ; gain = 525.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 817.020 ; gain = 525.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 817.020 ; gain = 525.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 817.020 ; gain = 525.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:01:19 . Memory (MB): peak = 817.020 ; gain = 525.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:01:19 . Memory (MB): peak = 817.020 ; gain = 525.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:01:19 . Memory (MB): peak = 817.020 ; gain = 525.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   128|
+|2     |LUT1   |    42|
+|3     |LUT2   |   181|
+|4     |LUT3   |   116|
+|5     |LUT4   |   147|
+|6     |LUT5   |    79|
+|7     |LUT6   |   331|
+|8     |MUXF7  |    35|
+|9     |MUXF8  |    10|
+|10    |FDRE   |   529|
+|11    |FDSE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+-----------------+------+
+|      |Instance                  |Module           |Cells |
++------+--------------------------+-----------------+------+
+|1     |top                       |                 |  1599|
+|2     |  inst                    |FFT_v1_0         |  1599|
+|3     |    FFT_v1_0_S00_AXI_inst |FFT_v1_0_S00_AXI |  1595|
+|4     |      nolabel_line539     |FFT              |   835|
+|5     |        s11               |bfly2_4          |    29|
+|6     |        s12               |bfly2_4_0        |    13|
+|7     |        s13               |bfly2_4_1        |   161|
+|8     |        s14               |bfly2_4_2        |   156|
+|9     |        s21               |bfly2_4_3        |    45|
+|10    |        s23               |bfly2_4_4        |    19|
+|11    |        s31               |bfly2_4_5        |     6|
+|12    |        s32               |bfly4_4          |   207|
+|13    |        s34               |bfly4_4_6        |   176|
++------+--------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:01:19 . Memory (MB): peak = 817.020 ; gain = 525.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 59 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 817.020 ; gain = 178.602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:01:20 . Memory (MB): peak = 817.020 ; gain = 525.883
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 173 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:25 . Memory (MB): peak = 824.262 ; gain = 541.582
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Leo/Desktop/FPGA/final/final.runs/FFT_system_FFT_0_0_synth_1/FFT_system_FFT_0_0.dcp' has been generated.
