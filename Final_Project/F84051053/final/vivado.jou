@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 17 01:36:10 2019
+# Process ID: 71744
+# Current directory: D:/Users/user/Documents/GitHub/F84051053/final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent72544 D:\Users\user\Documents\GitHub\F84051053\final\final.xpr
+# Log file: D:/Users/user/Documents/GitHub/F84051053/final/vivado.log
+# Journal file: D:/Users/user/Documents/GitHub/F84051053/final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/user/Documents/GitHub/F84051053/final/final.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Users/user/Documents/GitHub/F84051053/final/final.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {2 508 -195} [get_bd_cells rst_ps7_0_100M]
+set_property location {2.5 939 -118} [get_bd_cells ps7_0_axi_periph]
+set_property location {3.5 1205 -136} [get_bd_cells Final_0]
+startgroup
+set_property location {1552 -179} [get_bd_ports led4_g]
+set_property location {1552 -199} [get_bd_ports led4_r]
+set_property location {1552 -119} [get_bd_ports led5_g]
+set_property location {1552 -159} [get_bd_ports led4_b]
+set_property location {1552 -139} [get_bd_ports led5_r]
+set_property location {1552 -219} [get_bd_ports led]
+set_property location {1552 -99} [get_bd_ports led5_b]
+endgroup
+startgroup
+set_property location {1558 -166} [get_bd_ports led4_g]
+set_property location {1558 -186} [get_bd_ports led4_r]
+set_property location {1558 -106} [get_bd_ports led5_g]
+set_property location {1558 -226} [get_bd_ports led4_b]
+set_property location {1558 -126} [get_bd_ports led5_r]
+set_property location {1558 -196} [get_bd_ports led]
+set_property location {1558 -66} [get_bd_ports led5_b]
+endgroup
+startgroup
+set_property location {1563 -192} [get_bd_ports led4_g]
+set_property location {1563 -172} [get_bd_ports led4_r]
+set_property location {1563 -132} [get_bd_ports led5_g]
+set_property location {1563 -132} [get_bd_ports led5_r]
+set_property location {1563 -232} [get_bd_ports led]
+set_property location {1563 -92} [get_bd_ports led5_b]
+set_property location {1563 -172} [get_bd_ports led4_b]
+endgroup
+startgroup
+set_property location {1558 -219} [get_bd_ports led4_g]
+set_property location {1558 -179} [get_bd_ports led4_r]
+set_property location {1558 -139} [get_bd_ports led4_b]
+set_property location {1558 -149} [get_bd_ports led5_r]
+set_property location {1558 -229} [get_bd_ports led]
+set_property location {1558 -119} [get_bd_ports led5_b]
+set_property location {1558 -99} [get_bd_ports led5_g]
+endgroup
+set_property location {1564 -82} [get_bd_ports led5_b]
+set_property location {1563 -122} [get_bd_ports led5_r]
+set_property location {1564 -154} [get_bd_ports led4_r]
+set_property location {1559 -152} [get_bd_ports led4_g]
+set_property location {1559 -143} [get_bd_ports led4_r]
+set_property location {1563 -182} [get_bd_ports led4_g]
+set_property location {1564 -182} [get_bd_ports led4_r]
+set_property location {1569 -135} [get_bd_ports led4_b]
+set_property location {1567 -208} [get_bd_ports led]
+set_property location {1559 -194} [get_bd_ports led5_r]
+set_property location {1558 -145} [get_bd_ports led4_b]
+set_property location {1559 -123} [get_bd_ports led5_r]
+set_property location {1556 -200} [get_bd_ports led4_r]
+set_property location {1559 -188} [get_bd_ports led4_r]
+set_property location {1563 -206} [get_bd_ports led4_r]
+set_property location {1559 -205} [get_bd_ports led4_r]
+set_property location {1561 -180} [get_bd_ports led4_r]
+set_property location {1563 -203} [get_bd_ports led]
+set_property location {-46 -362} [get_bd_ports sw]
+set_property location {1 586 -10} [get_bd_cells processing_system7_0]
+set_property location {1 505 -398} [get_bd_cells ps7_0_axi_periph]
+set_property location {1.5 889 -140} [get_bd_cells Final_0]
+startgroup
+set_property location {1224 -181} [get_bd_ports led4_g]
+set_property location {1224 -241} [get_bd_ports led4_r]
+set_property location {1224 -21} [get_bd_intf_ports DDR]
+set_property location {1224 -121} [get_bd_ports led5_g]
+set_property location {1224 -161} [get_bd_ports led4_b]
+set_property location {1224 -121} [get_bd_ports led5_r]
+set_property location {1224 -221} [get_bd_ports led]
+set_property location {1224 -101} [get_bd_ports led5_b]
+set_property location {1224 -61} [get_bd_intf_ports FIXED_IO]
+endgroup
+undo
+set_property location {1563 -70} [get_bd_ports led5_b]
+set_property location {1563 -84} [get_bd_ports led5_b]
+set_property location {1621 -160} [get_bd_ports led4_g]
+set_property location {2.5 1297 -140} [get_bd_cells Final_0]
+set_property location {1.5 878 -405} [get_bd_cells ps7_0_axi_periph]
+set_property location {2 898 -211} [get_bd_cells rst_ps7_0_100M]
+set_property location {2 818 -13} [get_bd_cells processing_system7_0]
+set_property location {0.5 472 -22} [get_bd_cells processing_system7_0]
+set_property location {1 580 -190} [get_bd_cells rst_ps7_0_100M]
+set_property location {1 553 -394} [get_bd_cells ps7_0_axi_periph]
+set_property location {1.5 873 -136} [get_bd_cells Final_0]
+set_property location {1385 -199} [get_bd_ports led4_r]
+undo
+set_property location {1561 -196} [get_bd_ports led4_g]
+set_property location {1571 -178} [get_bd_ports led4_r]
+set_property location {1560 -162} [get_bd_ports led4_g]
+set_property location {1564 -203} [get_bd_ports led]
