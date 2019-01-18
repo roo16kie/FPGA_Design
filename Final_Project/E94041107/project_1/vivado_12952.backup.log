@@ -1,0 +1,399 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Jan 13 21:13:42 2019
+# Process ID: 12952
+# Current directory: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5324 C:\Users\ruyuan\Desktop\FPGA_Design-master\lcd_fpga\project_1\project_1.xpr
+# Log file: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/vivado.log
+# Journal file: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/ip_repo/bram_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 810.977 ; gain = 96.688
+update_compile_order -fileset sources_1
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/ip_repo/bram_1.0'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:bram:1.0 [get_ips  design_1_bram_0_0] -log ip_upgrade.log
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:user:bram:1.0 - bram_0
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_bram_0_0 from bram_v1.0 1.0 to bram_v1.0 1.0
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 932.512 ; gain = 104.941
+export_ip_user_files -of_objects [get_ips design_1_bram_0_0] -no_script -sync -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper -files [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_bram_0_0, cache-ID = 16d9f49a69260cb2; cache size = 5.189 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 10815dbb95871d39; cache size = 5.189 MB.
+[Sun Jan 13 21:56:30 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/synth_1/runme.log
+[Sun Jan 13 21:56:30 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1090.301 ; gain = 52.031
+write_hwdef -force  -file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk -hwspec C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk -hwspec C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/ip_repo/bram_1.0'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:bram:1.0 [get_ips  design_1_bram_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_bram_0_0 from bram_v1.0 1.0 to bram_v1.0 1.0
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_bram_0_0] -no_script -sync -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper -files [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 10815dbb95871d39; cache size = 2.119 MB.
+[Sun Jan 13 22:10:15 2019] Launched design_1_bram_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_bram_0_0_synth_1: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/design_1_bram_0_0_synth_1/runme.log
+synth_1: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/synth_1/runme.log
+[Sun Jan 13 22:10:15 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1177.500 ; gain = 41.531
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/ip_repo/bram_1.0'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:bram:1.0 [get_ips  design_1_bram_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_bram_0_0 from bram_v1.0 1.0 to bram_v1.0 1.0
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_bram_0_0] -no_script -sync -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper -files [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 10815dbb95871d39; cache size = 2.119 MB.
+[Sun Jan 13 22:12:42 2019] Launched design_1_bram_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_bram_0_0_synth_1: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/design_1_bram_0_0_synth_1/runme.log
+synth_1: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/synth_1/runme.log
+[Sun Jan 13 22:12:42 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1260.035 ; gain = 43.363
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/ip_repo/bram_1.0'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:bram:1.0 [get_ips  design_1_bram_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_bram_0_0 from bram_v1.0 1.0 to bram_v1.0 1.0
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_bram_0_0] -no_script -sync -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper -files [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 10815dbb95871d39; cache size = 2.119 MB.
+[Sun Jan 13 22:14:20 2019] Launched design_1_bram_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_bram_0_0_synth_1: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/design_1_bram_0_0_synth_1/runme.log
+synth_1: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/synth_1/runme.log
+[Sun Jan 13 22:14:20 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1344.418 ; gain = 40.020
+launch_sdk -workspace C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk -hwspec C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk -hwspec C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/ip_repo/bram_1.0'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:bram:1.0 [get_ips  design_1_bram_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_bram_0_0 from bram_v1.0 1.0 to bram_v1.0 1.0
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_bram_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_bram_0_0, cache-ID = 16d9f49a69260cb2; cache size = 7.861 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 10815dbb95871d39; cache size = 7.861 MB.
+[Sun Jan 13 22:45:53 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/synth_1/runme.log
+[Sun Jan 13 22:45:53 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1392.309 ; gain = 47.891
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/ip_repo/bram_1.0'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:bram:1.0 [get_ips  design_1_bram_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_bram_0_0 from bram_v1.0 1.0 to bram_v1.0 1.0
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_bram_0_0] -no_script -sync -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper -files [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 10815dbb95871d39; cache size = 2.119 MB.
+[Sun Jan 13 22:53:00 2019] Launched design_1_bram_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_bram_0_0_synth_1: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/design_1_bram_0_0_synth_1/runme.log
+synth_1: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/synth_1/runme.log
+[Sun Jan 13 22:53:00 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1471.855 ; gain = 42.977
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/ip_repo/bram_1.0'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:bram:1.0 [get_ips  design_1_bram_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_bram_0_0 from bram_v1.0 1.0 to bram_v1.0 1.0
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_bram_0_0] -no_script -sync -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper -files [get_files C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : <C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_bram_0_0, cache-ID = 16d9f49a69260cb2; cache size = 7.862 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 10815dbb95871d39; cache size = 7.862 MB.
+[Sun Jan 13 23:10:24 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1552.445 ; gain = 47.824
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_bram_0_0/design_1_bram_0_0.dcp' for cell 'design_1_i/bram_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 1257 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'design_1_bram_0_0__LCD_CTRL' defined in file 'design_1_bram_0_0.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc:9]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports sysclk]'. [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'B_out'. [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'G_out'. [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'R_out'. [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 10 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 10 instances
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1966.074 ; gain = 409.980
+set_property mark_debug true [get_nets [list {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[1]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[4]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[5]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[0]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[3]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[4]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[3]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[4]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[6]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[0]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[6]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[1]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[7]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[0]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[2]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[7]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[2]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[6]} design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i_i_1_n_0 {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[1]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[2]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[5]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[7]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[3]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[5]} design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/<const0>]]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list design_1_i/processing_system7_0/inst/FCLK_CLK0 ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[0]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[1]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[2]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[3]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[4]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[5]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[6]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_in_to_mem[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[0]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[1]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[2]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[3]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[4]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[5]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[6]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/data_out[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[0]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[1]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[2]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[3]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[4]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[5]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[6]} {design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/address[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/m_ctrl1/mem_i_i_1_n_0 ]]
+set_property target_constrs_file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/pynq-z2_v1.0.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1977.055 ; gain = 0.000
+[Sun Jan 13 23:14:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.runs/impl_1/runme.log
+write_hwdef -force  -file C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk -hwspec C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk -hwspec C:/Users/ruyuan/Desktop/FPGA_Design-master/lcd_fpga/project_1/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 13 23:46:47 2019...
