@@ -1,0 +1,137 @@
+#include <stdio.h>
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xparameters.h"
+
+void	write_data(u32 address, u32 data);
+u32 read_data(u32 address);
+
+int main()
+{
+	u32 matrix[64]={0x0,0x1,0x2,0x3,0x4,0x5,0x6,0x7,
+					0x89,0x9,0xa,0xb,0xc,0xd,0xe,0xf,
+					0x10,0x11,0x12,0x13,0x14,0x15,0x16,0x17,
+					0x18,0x19,0x1a,0x1b,0x1c,0x1d,0x1e,0x1f,
+					0x20,0x21,0x22,0x23,0x24,0x25,0x26,0x27,
+					0x28,0x29,0x2a,0x2b,0x2c,0x2d,0x2e,0x2f,
+					0x30,0x31,0x32,0x33,0x34,0x35,0x36,0x37,
+					0x38,0x39,0x3a,0x3b,0x3c,0x3d,0x3e,0x3f};
+
+//	u32	data1,data2,data3,data4,m11,m12,m13,m14,m21,m22,m23,m24,number;
+	u32 a , c , cmd,data_out,img1,center;
+	u32 b=0x00000000;
+    Xil_Out32(XPAR_BRAM_0_S00_AXI_BASEADDR, 0x00000002);
+	for(a=0;a<64;a++)
+	{
+		write_data(0x00000000+a,matrix[a]);
+		printf("%x   ",matrix[a]);
+	}
+	center = Xil_In32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x0000000C);
+	printf("\n%x   ",center);
+	while(getchar() != EOF) {
+		printf("\n");
+	printf("please give the fucking cmd . \n");
+	printf("cmd table : 1.up 2.down 3.left 4.right 5.average 6.mirror X 7.mirror Y 8.write back BRAM 9.print");
+	scanf("%d", &cmd);
+	printf(" %d\r\n", cmd);
+
+	if(cmd==1)
+	{
+        write_data(0x00000040+b, 0x00000001);
+		b++;
+		center = Xil_In32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x0000000C);
+		printf("%x   ",center);
+    }
+	else if(cmd==2)
+	{
+        write_data(0x00000040+b, 0x00000002);
+		b++;
+		center = Xil_In32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x0000000C);
+				printf("%x   ",center);
+	}
+    else if(cmd==3)
+	{
+        write_data(0x00000040+b, 0x00000003);
+		b++;
+		center = Xil_In32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x0000000C);
+		printf("%x   ",center);
+	}
+    else if(cmd==4)
+	{
+        write_data(0x00000040+b, 0x00000004);
+		b++;
+		center = Xil_In32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x0000000C);
+		printf("%x   ",center);
+	}
+    else if(cmd==5)
+	{
+        write_data(0x00000040+b, 0x00000005);
+		b++;
+		center = Xil_In32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x0000000C);
+		printf("%x   ",center);
+	}
+    else if(cmd==6)
+	{
+        write_data(0x00000040+b, 0x00000006);
+		b++;
+	}
+    else if(cmd==7)
+	{
+        write_data(0x00000040+b, 0x00000007);
+		b++;
+	}
+    else if(cmd==8)
+	{
+        write_data(0x00000040+b, 0x00000008);
+		b++;
+	}
+    else if(cmd==9)
+	{
+		for(c=0;c<256;c++)
+		{
+        data_out=read_data(c);
+        printf("%x   ",data_out);
+
+
+		}
+		img1 = Xil_In32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x00000008);
+        printf("%x   ",img1);
+	}
+
+}
+    return 0;
+}
+
+void	write_data(u32 address, u32 data)
+{
+	u32 ans;
+
+    Xil_Out32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x00000004, 0x00000002);	//cmd	write
+    Xil_Out32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x00000008, data);			//data_in
+    Xil_Out32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x0000000C, address);		//address
+    Xil_Out32(XPAR_BRAM_0_S00_AXI_BASEADDR, 0x00000001);					//cmd valid
+    Xil_Out32(XPAR_BRAM_0_S00_AXI_BASEADDR, 0x00000000);					//cmd no valid
+    ans = 0x00000000;
+    while(ans != 0x00000001)
+    {
+    	ans = Xil_In32(XPAR_BRAM_0_S00_AXI_BASEADDR);					//waiting for cmd done
+    }
+}
+
+u32 read_data(u32 address)
+{
+	u32 ans;
+	u32 data;
+
+    Xil_Out32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x00000004, 0x00000001);	//cmd	read
+    Xil_Out32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x0000000C, address);		//address
+    Xil_Out32(XPAR_BRAM_0_S00_AXI_BASEADDR, 0x00000001);					//cmd valid
+    Xil_Out32(XPAR_BRAM_0_S00_AXI_BASEADDR, 0x00000000);					//cmd no valid
+    ans = 0x00000000;
+    while(ans != 0x00000001)
+    {
+    	ans = Xil_In32(XPAR_BRAM_0_S00_AXI_BASEADDR);					//waiting for cmd done
+    }
+    data = Xil_In32(XPAR_BRAM_0_S00_AXI_BASEADDR + 0x00000004);			//data_out
+    return data;
+}
