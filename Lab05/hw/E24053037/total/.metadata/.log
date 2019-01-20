@@ -1,0 +1,34 @@
+!SESSION 2019-01-12 15:39:48.872 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/黑崇瑜/Documents/GitHub/FPGA_Design/Lab05/hw/E24053037/total
+
+!ENTRY org.eclipse.ui 2 0 2019-01-12 15:40:16.817
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-01-12 15:40:16.817
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-01-12 15:40:20.116
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-01-12 15:40:20.116
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-12 15:40:50.512
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-12 15:40:50.522
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-12 15:40:57.160
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-12 15:40:57.172
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-12 15:40:57.188
+!MESSAGE XSCT Command: [setws C:/Users/黑崇瑜/Documents/GitHub/FPGA_Design/Lab05/hw/E24053037/total], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-12 15:40:57.207
+!MESSAGE XSCT command with result: [setws C:/Users/黑崇瑜/Documents/GitHub/FPGA_Design/Lab05/hw/E24053037/total], Result: [null, ]. Thread: Thread-15
