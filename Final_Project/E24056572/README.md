@@ -51,9 +51,48 @@ Simple Frequency Displayer
 #### Adau1761
 
 Adau1761為PYNQ-Z2上預載的音訊處理晶片，在本次實作中我們將它設置為取樣率48KHz、ADC取樣長度24bit。  
-此晶片的設定方式是透過I2C寫入內部暫存器，I2C地址也是可以設定的，此處我們通過硬體固定其地址。  
+此晶片的設定方式是透過I2C寫入內部暫存器，I2C地址也是可以設定的，此處我們通過硬體固定其地址。
+
+<img src = "img/addr.png"> 
 <img src = "img/iic.png">  
+
+上圖的Constant設為0，因此I2C地址固定為0x38+R/W bit。  
 而參數的設定為了方便我們選擇使用軟體控制。
+以下是在本專案中相關參數的設定值(參數的設定需要按照以下順序逐一進行)
+|  Register       |    Value        | Function  
+| ----------------|-----------------|-------------------------------
+|  0x4000         | 0x0E            | Set PLL input clock to 1024*fs
+|  0x4002         | 0x007D000C2301  | Set Sample Rate 48KHz(fs)
+|  0x4000         | 0x0F            | Enable PLL input clock
+|  0x4015         | 0x01            | Set adau1761 to I2C master
+|  0x400A         | 0x01            | Enable left mixer
+|  0x400B         | 0x05            | Left mixer input gain 0dB
+|  0x400C         | 0x01            | Enable right mixer
+|  0x400D         | 0x05            | Right mixer input gain 0dB
+|  0x4014         | 0xA0            | Noise gate config (-76.5dB, Fade then mute)
+|  0x401C         | 0x21            | Playback left mixer unmute
+|  0x401E         | 0x41            | Playback right mixer unmute
+|  0x4023         | 0xe7            | Enable headphone output left
+|  0x4024         | 0xe7            | Enable headphone output right
+|  0x4025         | 0xe7            | Enable line out left
+|  0x4025         | 0xe7            | Enable line out right
+|  0x4019         | 0x23            | Enable both ADCs
+|  0x4029         | 0x23            | Enable playback both channels
+|  0x402A         | 0x03            | Enable both DACs
+|  0x40F2         | 0x01            | Serial input L0,R0 to DAC L,R
+|  0x40F3         | 0x01            | Serial output ADC L,R to serial output L0,R0
+|  0x40F9         | 0x7F            | Enable clocks to all engines
+
+#### Clocking Wizard
+
+Adau1761中的鎖相迴路之鎖定時間與該晶片接受的額外Master clock有關，而本專案中MCLK為24MHz，由Vivado提供的Clocking Wizard產生。相對應的鎖定時間約為2.95毫秒，因此在設定完音訊晶片的時間設定(Register 0x4002 與 Register 0x4000)後需要等待2.95毫秒才能再進行其他設定。
+
+#### I2S receiver and transmitter
+
+由於adau1761取樣後的輸出為I2S格式，因此本專案中我們參考網路上的資源設計了I2S的收發模組。  
+再本專案中，音訊有兩條行進路線，第一條是I2S接收器將接受到的訊號送給I2S發送出去，使用者可以透過耳機聽到輸入的音訊；第二條是I2S接收器將接受到的訊號送給快速傅立葉變換進行頻譜分析。  
+由於FFT的輸入格式是AXI Stream且音訊也是一種Stream，因此I2S收發摸組都使用AXI Stream的格式來傳遞資料。  
+需要注意的是，I2S是一種以MSB優先且一次送出一個bit的傳遞協定，因此送到FFT的資料要先經過bit reverse，所以針對FFT所需要的格式我們額外設計了一個I2S Receiver FFT。  
 
 #### Fast Fourier Transform
 
