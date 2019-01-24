@@ -18,7 +18,7 @@ Simple Frequency Displayer
 
 ### Brief Introduction
 
-本專案為一個簡易的頻譜展示器，頻譜的展示方式為8*8LED矩陣。  
+本專案為一個簡易的頻譜展示器，頻譜的展示方式為8x8LED矩陣。  
 訊號透過音源線輸入，在PYNQ-Z2的板子上有一塊音訊的編解碼器ADAU1761，硬體讀取音訊晶片的取樣結果後，經過快速傅立葉變換再計算各頻帶相對應的強度之後，在LED上顯示出來。
 
 ### Open Source IP
@@ -38,7 +38,7 @@ Simple Frequency Displayer
 
 ### Extra Hardware
 
-- WS2812 8*8 LED Matrix
+- WS2812 8x8 LED Matrix
   
 <img src = "img/led.png">
 
@@ -57,7 +57,7 @@ Adau1761為PYNQ-Z2上預載的音訊處理晶片，在本次實作中我們將�
 <img src = "img/iic.png">  
 
 上圖的Constant設為0，因此I2C地址固定為0x38+R/W bit。  
-而參數的設定為了方便我們選擇使用軟體控制。
+而參數的設定為了方便我們選擇使用軟體控制。  
 以下是在本專案中相關參數的設定值(參數的設定需要按照以下順序逐一進行)
 
 |  Register       |    Value        | Function                                       
@@ -97,30 +97,35 @@ Adau1761中的鎖相迴路之鎖定時間與該晶片接受的額外Master clock
 
 #### Fast Fourier Transform
 
+
+FFT我們直接使用Xilinx提供的ip，  
+datasize： 32 bits  
+運算架構：pipeline  
+目前測試可用的points：512、1024  
+
+
 #### Magnitude and Average
 
 
-FFT運算的結果為複數，
-為了避免過多複雜的運算，
-複數的大小(Magnitude)主要用以下估計法計算
+FFT運算的結果為複數，  
+為了避免過多複雜的運算，  
+複數的大小(Magnitude)主要用以下估計法計算  
 
-M = Max(Re,Im)
-Magnitude = Max( M, 0.375 M + 0.5(Re+Im))
+M = Max(Re,Im)  
+Magnitude = Max( M, 0.375 M + 0.5(Re+Im))  
 
-此估計法與實際算法的誤差最多是1-(16/17)^0.5 ≒ 3%
-<img src = "img/mag.png">  
+此估計法與實際算法的誤差最多是1-(16/17)^0.5 ≒ 3%  
+<br/>
 
-
-
-為了在WS2812 8x8 LED Matrix 顯示頻譜，我們依據音調的原理，以及FFT運算結果的對稱性，
-取FFT運算結果數(2^n)的前0.5個 ( 2^(n-1) ) ，
-並忽視部分低頻————前2^(n-9)筆資料————將剩下的資料分成8個區間，
-每個區間的資料數成等比數列，如下圖
+為了在WS2812 8x8 LED Matrix 顯示頻譜，我們依據音調的原理，以及FFT運算結果的對稱性，  
+取FFT運算結果數(2^n)的前0.5個 ( 2^(n-1) ) ，  
+並忽視部分低頻————前2^(n-9)筆資料————將剩下的資料分成8個區間，  
+每個區間的資料數成等比數列，如下表所示  
 <img src = "img/average.png">  
 
-各區間分別取平均，即為該區間的頻譜大小。
+各區間分別取平均，即為該區間的頻譜大小。  
 
-平均值取法：Logarithmic Averages
+平均值取法：Logarithmic Averages  
 http://code.compartmental.net/2007/03/21/fft-averages/
 
 
