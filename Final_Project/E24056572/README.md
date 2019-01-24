@@ -99,5 +99,30 @@ Adau1761中的鎖相迴路之鎖定時間與該晶片接受的額外Master clock
 
 #### Magnitude and Average
 
+
+FFT運算的結果為複數，
+為了避免過多複雜的運算，
+複數的大小(Magnitude)主要用以下估計法計算
+
+M = Max(Re,Im)
+Magnitude = Max( M, 0.375 M + 0.5(Re+Im))
+
+此估計法與實際算法的誤差最多是1-(16/17)^0.5 ≒ 3%
+<img src = "img/mag.png">  
+
+
+
+為了在WS2812 8x8 LED Matrix 顯示頻譜，我們依據音調的原理，以及FFT運算結果的對稱性，
+取FFT運算結果數(2^n)的前0.5個 ( 2^(n-1) ) ，
+並忽視部分低頻————前2^(n-9)筆資料————將剩下的資料分成8個區間，
+每個區間的資料數成等比數列，如下圖
+<img src = "img/average.png">  
+
+各區間分別取平均，即為該區間的頻譜大小。
+
+平均值取法：Logarithmic Averages
+http://code.compartmental.net/2007/03/21/fft-averages/
+
+
 #### WS2812
 
