@@ -129,8 +129,6 @@ Magnitude = Max( M, 0.375 M + 0.5(Re+Im))
 http://code.compartmental.net/2007/03/21/fft-averages/
 
 
-#### WS2812
-
 ### Demo
 [Demo](https://www.youtube.com/watch?v=3KMo6Ow_ugk "title")  
 聲音請調大聲才聽得到
