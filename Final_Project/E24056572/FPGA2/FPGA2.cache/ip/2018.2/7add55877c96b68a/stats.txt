@@ -1,0 +1,4 @@
+NumberHits:1
+Timestamp: Sun Jan 13 21:10:13 UTC 2019
+VLNV: xilinx.com:user:magnitude:1.0
+SynthRuntime: 45
