@@ -1,4 +1,0 @@
-NumberHits:0
-Timestamp: Sun Dec 09 10:40:36 UTC 2018
-VLNV: xilinx.com:user:matrix_processor_ctrl:1.0
-SynthRuntime: 43

@@ -1,4 +1,0 @@
-NumberHits:1
-Timestamp: Sat Dec 08 16:23:45 UTC 2018
-VLNV: xilinx.com:user:bram_control:2.0
-SynthRuntime: 33
