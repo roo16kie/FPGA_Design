@@ -1,0 +1,89 @@
+22:25:07 **** Auto Build of configuration Debug for project FFT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'u32 * {aka long unsigned int *}' [-Wformat=]
+  scanf("%d",&x0);
+         ~^  ~~~
+         %ld
+../src/main.c:12:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("%d\r\n",x0);
+          ~^
+          %ld
+../src/main.c:13:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'u32 * {aka long unsigned int *}' [-Wformat=]
+  scanf("%d",&x1);
+         ~^  ~~~
+         %ld
+../src/main.c:14:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("%d\r\n",x1);
+          ~^
+          %ld
+../src/main.c:15:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'u32 * {aka long unsigned int *}' [-Wformat=]
+  scanf("%d",&x2);
+         ~^  ~~~
+         %ld
+../src/main.c:16:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("%d\r\n",x2);
+          ~^
+          %ld
+../src/main.c:17:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'u32 * {aka long unsigned int *}' [-Wformat=]
+  scanf("%d",&x3);
+         ~^  ~~~
+         %ld
+../src/main.c:18:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("%d\r\n",x3);
+          ~^
+          %ld
+../src/main.c:19:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'u32 * {aka long unsigned int *}' [-Wformat=]
+  scanf("%d",&x4);
+         ~^  ~~~
+         %ld
+../src/main.c:20:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("%d\r\n",x4);
+          ~^
+          %ld
+../src/main.c:21:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'u32 * {aka long unsigned int *}' [-Wformat=]
+  scanf("%d",&x5);
+         ~^  ~~~
+         %ld
+../src/main.c:22:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("%d\r\n",x5);
+          ~^
+          %ld
+../src/main.c:23:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'u32 * {aka long unsigned int *}' [-Wformat=]
+  scanf("%d",&x6);
+         ~^  ~~~
+         %ld
+../src/main.c:24:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("%d\r\n",x6);
+          ~^
+          %ld
+../src/main.c:25:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'u32 * {aka long unsigned int *}' [-Wformat=]
+  scanf("%d",&x7);
+         ~^  ~~~
+         %ld
+../src/main.c:26:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("%d\r\n",x7);
+          ~^
+          %ld
+../src/main.c:35:20: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("y[%d] = %d + %d i \r\n, ",i,yr,yi);
+                   ~^
+                   %ld
+../src/main.c:35:25: warning: format '%d' expects argument of type 'int', but argument 4 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("y[%d] = %d + %d i \r\n, ",i,yr,yi);
+                        ~^
+                        %ld
+../src/main.c:28:6: warning: unused variable 'sel' [-Wunused-variable]
+  u32 sel=0;
+      ^~~
+Assembler messages:
+Fatal error: can't create src/main.o: Invalid argument
+make: *** [src/main.o] Error 1
+
+22:25:08 Build Finished (took 1s.245ms)
+

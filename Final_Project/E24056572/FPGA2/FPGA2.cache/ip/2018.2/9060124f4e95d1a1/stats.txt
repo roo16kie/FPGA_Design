@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Sun Jan 13 19:15:34 UTC 2019
+VLNV: xilinx.com:ip:xfft:9.1
+SynthRuntime: 309

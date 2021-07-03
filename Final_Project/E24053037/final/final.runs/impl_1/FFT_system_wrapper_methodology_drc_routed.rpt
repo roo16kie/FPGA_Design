@@ -1,0 +1,65 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Jan 12 23:42:46 2019
+| Host         : LAPTOP-BJA1B3DR running 64-bit major release  (build 9200)
+| Command      : report_methodology -file FFT_system_wrapper_methodology_drc_routed.rpt -pb FFT_system_wrapper_methodology_drc_routed.pb -rpx FFT_system_wrapper_methodology_drc_routed.rpx
+| Design       : FFT_system_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 6
++-----------+----------+-----------------------+------------+
+| Rule      | Severity | Description           | Violations |
++-----------+----------+-----------------------+------------+
+| TIMING-16 | Warning  | Large setup violation | 6          |
++-----------+----------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.077 ns between FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/slv_reg7_reg[1]/C (clocked by clk_fpga_0) and FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/nolabel_line539/yr_reg[5]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.091 ns between FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/slv_reg7_reg[1]/C (clocked by clk_fpga_0) and FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/nolabel_line539/yi_reg[6]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.178 ns between FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/slv_reg7_reg[1]/C (clocked by clk_fpga_0) and FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/nolabel_line539/yr_reg[7]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.452 ns between FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/slv_reg7_reg[1]/C (clocked by clk_fpga_0) and FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/nolabel_line539/yr_reg[8]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.638 ns between FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/slv_reg7_reg[1]/C (clocked by clk_fpga_0) and FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/nolabel_line539/yi_reg[8]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.644 ns between FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/slv_reg7_reg[1]/C (clocked by clk_fpga_0) and FFT_system_i/FFT_0/inst/FFT_v1_0_S00_AXI_inst/nolabel_line539/yi_reg[7]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+

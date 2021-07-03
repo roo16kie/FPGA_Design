@@ -1,0 +1,2 @@
+# This file is automatically written.  Do not modify.
+proc gen_USERPARAMETER_C_S_AXI_ADDR_WIDTH_VALUE {C_S_AXI_DATA_WIDTH NUMBER_OF_LEDS } {expr int(ceil ( ((($C_S_AXI_DATA_WIDTH)/32) + 1) + (log($NUMBER_OF_LEDS)/log(2)) ))}

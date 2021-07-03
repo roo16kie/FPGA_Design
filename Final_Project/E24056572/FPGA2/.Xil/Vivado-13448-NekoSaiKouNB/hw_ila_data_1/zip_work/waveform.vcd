@@ -1,0 +1,25 @@
+$date
+        2019-Jan-14 12:59:50
+$end
+$version
+        Vivado v2018.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 36 " design_1_i/magnitude_0_magnitude [35:0] $end
+$var reg 11 F design_1_i/magnitude_0_index_out [10:0] $end
+$var reg 24 Q design_1_i/i2s_receive_new_FFT_0_M_AXIS_TDATA [23:0] $end
+$var reg 64 i design_1_i/xfft_0_m_axis_data_tdata [63:0] $end
+$var reg 11 K" design_1_i/xfft_0_m_axis_data_tuser [10:0] $end
+$var reg 1 V" design_1_i/bclk_r $end
+$var reg 1 W" design_1_i/i2s_receive_new_FFT_0_M_AXIS_TVALID $end
+$var reg 1 X" design_1_i/lrclk_r $end
+$var reg 1 Y" design_1_i/magnitude_0_valid_out $end
+$var reg 1 Z" u_ila_0_xfft_0_m_axis_data_tvalid $end
+$var reg 1 [" _TRIGGER $end
+$var reg 1 \" _WINDOW $end
+$var reg 1 ]" _GAP $end
+$upscope $end
+$enddefinitions $end

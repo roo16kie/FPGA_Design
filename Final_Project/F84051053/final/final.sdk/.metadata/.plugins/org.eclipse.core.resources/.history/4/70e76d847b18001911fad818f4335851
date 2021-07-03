@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xparameters.h"  //¨ú 1-1000 ªº¶Ã¼Æ num=(rand() % 1000) +1
+#include "final.h"
+#define FINAL_mReadReg(BaseAddress, RegOffset) \
+    Xil_In32((BaseAddress) + (RegOffset))
+int main()
+{
+	u32 input;
+	u32 code;
+	u32 dout;
+	while(1) {
+			printf("Program Start!");
+			code = rand() % 255 +1;
+			scanf("%d",&input);
+			dout = final(XPAR_FINAL_0_S00_AXI_BASEADDR,input,code);
+			dout = dout & 3;
+
+
+
+			printf("%d\n",dout);
+
+	}
+	printf("Program End.\n\r");
+    return 0;
+}

@@ -1,1 +1,0 @@
-create_clock -name clk_100 -period 8.000 [get_ports { s00_axi_aclk }];
